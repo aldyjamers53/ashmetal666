@@ -11,8 +11,10 @@
         input[type="text"] { width: 100%; padding: 10px; background: #222; border: 1px solid #444; color: #fff; box-sizing: border-box; border-radius: 4px;}
         input[type="text"]:focus { border-color: #c00000; outline: none; }
         button { background: #c00000; color: #fff; border: none; padding: 10px 15px; cursor: pointer; font-weight: bold; margin-right: 10px; border-radius: 4px;}
+        button:hover { background: #e60000; }
         button.reset { background: #444; }
-        textarea { width: 100%; height: 120px; background: #1a1a1a; color: #00ff00; font-family: monospace; padding: 10px; margin-top: 20px; box-sizing: border-box; border: 1px solid #333; border-radius: 4px; resize: none;}
+        button.reset:hover { background: #555; }
+        textarea { width: 100%; height: 140px; background: #1a1a1a; color: #00ff00; font-family: monospace; padding: 10px; margin-top: 20px; box-sizing: border-box; border: 1px solid #333; border-radius: 4px; resize: none;}
         .hint { font-size: 11px; color: #666; margin-top: 4px; }
     </style>
 </head>
@@ -24,8 +26,8 @@
 
     <div class="form-group">
         <label>1. URL MP3 Dropbox</label>
-        <input type="text" id="src" placeholder="https://dl.dropboxusercontent.com/..." oninput="autoExtractData()">
-        <div class="hint">Tempel link Dropbox, data di bawah langsung terisi otomatis.</div>
+        <input type="text" id="src" placeholder="https://www.dropbox.com/..." oninput="autoExtractData()">
+        <div class="hint">Tempel link Dropbox, data di bawah langsung terisi otomatis dan domain langsung dikonversi aman.</div>
     </div>
     <div class="form-group">
         <label>Nama Band</label>
@@ -36,8 +38,8 @@
         <input type="text" id="title" placeholder="Terisi otomatis...">
     </div>
     <div class="form-group">
-        <label>URL Thumbnail Gambar (Otomatis Pola Zonalagu)</label>
-        <input type="text" id="img" placeholder="Terisi otomatis...">
+        <label>URL Thumbnail Gambar</label>
+        <input type="text" id="img" placeholder="Masukkan URL gambar manual atau gunakan auto-pola...">
     </div>
 
     <div style="margin-top:15px;">
@@ -45,7 +47,7 @@
         <button class="reset" onclick="resetForm()">Reset Form</button>
     </div>
 
-    <textarea id="output" readonly placeholder="Hasil format JSON..."></textarea>
+    <textarea id="output" readonly placeholder="Hasil format JSON akan muncul di sini..."></textarea>
     <br><br>
     <button onclick="copyJSON()" style="background:#0088cc; width: 100%;">Copy JSON</button>
 
@@ -80,11 +82,11 @@
                 document.getElementById('artist').value = artist;
                 document.getElementById('title').value = title;
 
-                // BUAT LINK GAMBAR OTOMATIS BERDASARKAN JUDUL LAGU (pola lami kamu)
+                // Set fallback pola lama jika user belum input thumbnail gambar
                 const imgFormat = title.replace(/\s+/g, '_');
                 document.getElementById('img').value = `http://zonalagu.jw.lt/img/${imgFormat}.jpg`;
             } catch (e) {
-                console.error(e);
+                console.error("Gagal parse nama file otomatis:", e);
             }
         }
 
@@ -99,6 +101,14 @@
                 return;
             }
 
+            // PERBAIKAN UTAMA: Mengubah domain www.dropbox.com menjadi dl.dropboxusercontent.com secara paksa
+            if (src.includes('www.dropbox.com')) {
+                src = src.replace('www.dropbox.com', 'dl.dropboxusercontent.com');
+            } else if (src.includes('dropbox.com') && !src.includes('dl.dropboxusercontent.com')) {
+                src = src.replace('dropbox.com', 'dl.dropboxusercontent.com');
+            }
+
+            // Memastikan parameter di ujungnya adalah ?raw=1 agar bisa distreaming langsung
             if (src.includes('?')) {
                 src = src.replace(/dl=0|dl=1/g, 'raw=1');
                 if (!src.includes('raw=1')) src += '&raw=1';
