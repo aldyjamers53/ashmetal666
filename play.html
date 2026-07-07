@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Lagu - ASHMETAL666</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div style="font-size: 20px; font-weight: bold; color: #c00000;">ASHMETAL666</div>
+        <nav>
+            <a href="index">Home</a>
+            <a href="about.html">About</a>
+            <a href="sitemap.html">Sitemap</a>
+        </nav>
+    </header>
+
+    <div style="font-size: 12px; margin-bottom: 15px; color:#aaa;">
+        <a href="index">Home</a> &raquo; <span style="color:#c00000;">Streaming & Download</span>
+    </div>
+
+    <main>
+        <div class="player-container">
+            <h1 id="h1Title" style="font-size: 20px; margin-bottom: 15px;">Memuat Detail Lagu...</h1>
+            <img id="songImg" class="player-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Cover Art">
+            
+            <audio id="audioPlayer" controls controlsList="nodownload"></audio>
+
+            <div class="player-buttons">
+                <a id="btnDlDirect" href="#" class="btn btn-play btn-large">DOWNLOAD MP3</a>
+                <button id="btnCopyLink" class="btn btn-dl btn-large">SHARE LINK</button>
+            </div>
+        </div>
+
+        <h2>Rekomendasi Rock & Metal Lainnya</h2>
+        <hr style="border: 1px solid #c00000; margin-bottom: 15px;">
+        
+        <div id="relatedSongs" class="song-list">
+            </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ASHMETAL666</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
