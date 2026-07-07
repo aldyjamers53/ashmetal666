@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASHMETAL666 - Auto Post Blogger (SEO English Version)</title>
+    <style>
+        body { background: #111; color: #fff; font-family: sans-serif; padding: 20px; max-width: 700px; margin: 0 auto; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; color: #c00000; font-weight: bold;}
+        textarea { width: 100%; background: #1a1a1a; color: #fff; padding: 10px; box-sizing: border-box; border: 1px solid #444; border-radius: 4px; font-family: monospace; }
+        textarea.input-json { height: 100px; color: #00ff00; }
+        textarea.output-html { height: 200px; color: #0088cc; }
+        button { background: #c00000; color: #fff; border: none; padding: 12px 20px; cursor: pointer; font-weight: bold; border-radius: 4px; width: 100%; margin-bottom: 10px;}
+        button:hover { background: #e60000; }
+        .btn-blogger { background: #f57c00; color: #fff; font-size: 16px; padding: 15px 20px; }
+        .btn-blogger:hover { background: #ff9800; }
+        .hint { font-size: 11px; color: #888; margin-top: 4px; }
+    </style>
+</head>
+<body>
+
+    <h2>ASHMETAL666 SEO ARTICLE GENERATOR (ENGLISH)</h2>
+    <hr style="border: 1px solid #c00000;">
+    <br>
+
+    <div class="form-group">
+        <label>1. Paste Song JSON Object (from gen_admin.html)</label>
+        <textarea id="jsonInput" class="input-json" placeholder='{&#10;  "src": "https://dl.dropboxusercontent.com/...",&#10;  "title": "Encephalitis Infection",&#10;  "artist": "Sagetih",&#10;  "img": "https://..."&#10;}'></textarea>
+        <div class="hint">Paste your JSON data here. The trailing comma will be automatically removed by the script.</div>
+    </div>
+
+    <button onclick="processData()">1. Process SEO Article Data</button>
+
+    <a id="bloggerLink" href="#" target="_blank" style="text-decoration: none; display: none;">
+        <button class="btn-blogger">🚀 2. Send & Auto Post to Blogger</button>
+    </a>
+
+    <div class="form-group" style="margin-top: 20px;">
+        <label>HTML Article Source Code Preview (Backup Copy-Paste)</label>
+        <textarea id="htmlOutput" class="output-html" readonly placeholder="The compiled HTML output will appear here..."></textarea>
+    </div>
+
+    <script>
+        function processData() {
+            const jsonText = document.getElementById('jsonInput').value.trim();
+            if (!jsonText) {
+                alert('Please paste the JSON data first!');
+                return;
+            }
+
+            try {
+                let cleanJson = jsonText;
+                if (cleanJson.endsWith(',')) {
+                    cleanJson = cleanJson.slice(0, -1);
+                }
+
+                const song = JSON.parse(cleanJson);
+                
+                // Sinkronisasi data enkripsi URL untuk web utama play.html
+                const encodedData = encodeURIComponent(JSON.stringify(song));
+                const playUrl = `https://ashmetal666.vercel.app/play.html?data=${encodedData}`;
+
+                // Judul Postingan Blogger (Menggunakan Keyword Emas Google: Download MP3, Free Stream)
+                const articleTitle = `${song.artist} - ${song.title} MP3 Download & Stream`;
+
+                // Struktur Kode Artikel HTML - Super SEO Friendly (Bahasa Inggris Internasional)
+                const articleHTML = `<article style="background: #111; color: #fff; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 15px; border: 1px solid #222; border-radius: 8px;">
+    
+    <header>
+        <h1 style="color: #e60000; font-size: 24px; margin-top: 0; margin-bottom: 10px; border-bottom: 2px solid #c00000; padding-bottom: 8px;">
+            Download MP3: ${song.artist} - ${song.title}
+        </h1>
+        <div style="font-size: 13px; color: #888; margin-bottom: 20px;">
+            <span>Category: Heavy Metal Music</span> | <span>Format: High-Quality Audio MP3</span> | <span>Status: Free Streaming Available</span>
+        </div>
+    </header>
+
+    <section style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 25px;">
+        <div style="flex: 1; min-width: 180px; max-width: 240px; margin: 0 auto;">
+            <img src="${song.img}" alt="${song.artist} - ${song.title} Album Cover Art" title="${song.artist} - ${song.title}" style="width: 100%; height: auto; border-radius: 6px; border: 1px solid #c00000; box-shadow: 0 4px 10px rgba(192, 0, 0, 0.3);">
+        </div>
+        
+        <div style="flex: 2; min-width: 280px;">
+            <h2 style="color: #fff; font-size: 18px; margin-top: 0; margin-bottom: 12px;">Listen and Stream Free Track: ${song.artist} - ${song.title}</h2>
+            <p style="color: #ccc; font-size: 14px; margin-top: 0; margin-bottom: 15px; text-align: justify;">
+                The underground music scene strikes back as <strong>${song.artist}</strong> officially unleashes their highly-anticipated brutal tracks entitled <strong>"${song.title}"</strong>. If you are a dedicated fan of extreme metal riffs, devastating blast beats, and intense raw energy, this masterpiece is a mandatory addition to your playlist.
+            </p>
+            
+            <h3 style="color: #c00000; font-size: 14px; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 1px;">Tracklist & File Specifications</h3>
+            <table style="width: 100%; color: #aaa; font-size: 14px; margin-bottom: 20px; border-collapse: collapse;">
+                <tr style="border-bottom: 1px solid #222;"><td style="padding: 6px 0; font-weight: bold; width: 120px; color: #fff;">Band / Artist</td><td style="color: #e60000;">: ${song.artist}</td></tr>
+                <tr style="border-bottom: 1px solid #222;"><td style="padding: 6px 0; font-weight: bold; color: #fff;">Song Title</td><td>: ${song.title}</td></tr>
+                <tr style="border-bottom: 1px solid #222;"><td style="padding: 6px 0; font-weight: bold; color: #fff;">Audio Format</td><td>: MPEG Layer-3 (.mp3) File</td></tr>
+                <tr style="border-bottom: 1px solid #222;"><td style="padding: 6px 0; font-weight: bold; color: #fff;">Bitrate Quality</td><td>: 320kbps High Quality Audio</td></tr>
+            </table>
+
+            <div style="margin-top: 20px;">
+                <a href="${playUrl}" target="_blank" style="display: inline-block; background: #c00000; color: #fff; padding: 12px 24px; text-decoration: none; font-weight: bold; font-size: 14px; border-radius: 4px; margin-right: 12px; transition: 0.3s; box-shadow: 0 4px 6px rgba(192,0,0,0.4);">
+                    💻 WEB STREAMING / PLAY
+                </a>
+                <a href="${song.src}" style="display: inline-block; background: #222; color: #fff; padding: 12px 24px; text-decoration: none; font-weight: bold; font-size: 14px; border-radius: 4px; border: 1px solid #444; transition: 0.3s;">
+                    📥 DIRECT DOWNLOAD
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer style="border-top: 1px dashed #333; padding-top: 12px; margin-top: 15px;">
+        <p style="font-size: 12px; color: #666; margin: 0; text-align: center;">
+            Disclaimer: All audio files are hosted directly via Dropbox servers under secured streaming protocols. Support the underground movement by checking out our official streaming page on ASHMETAL666.
+        </p>
+    </footer>
+
+</article>`;
+
+                // Simpan hasil ke textarea cadangan
+                document.getElementById('htmlOutput').value = articleHTML;
+
+                // Konfigurasi tautan otomatis Blogger Share Link API
+                const bloggerBaseUrl = "https://www.blogger.com/blog-this.g";
+                const finalBloggerUrl = `${bloggerBaseUrl}?n=${encodeURIComponent(articleTitle)}&b=${encodeURIComponent(articleHTML)}`;
+
+                // Munculkan tombol eksekusi posting otomatis
+                const actionLink = document.getElementById('bloggerLink');
+                actionLink.href = finalBloggerUrl;
+                actionLink.style.display = "block";
+
+                alert('SEO Optimization Completed! Click the orange button below to publish on Blogger.');
+
+            } catch (e) {
+                alert('Invalid JSON Format! Please check the structure and try again.');
+                console.error(e);
+            }
+        }
+    </script>
+</body>
+</html>
