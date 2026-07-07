@@ -1,8 +1,1501 @@
 [
   {
-    "src": "https://dl.dropboxusercontent.com/scl/fi/tihxuymyvo2g5wlaqpt3n/The_Salvatory-Bloody_Prophecy.mp3?rlkey=9q66nv4794902f8owv0jzb8yh&st=ci7tbcsg&raw=1",
-    "title": "Bloody Prophecy",
-    "artist": "The Salvatory",
-    "img": "http://zonalagu.jw.lt/img/Bloody_Prophecy.jpg"
+    "src": "https://dl.dropboxusercontent.com/scl/fi/za3yy9jx0o1g9n6uhqdf2/Jasad-Siliwangi.mp3?rlkey=40bu8fsyplkw742iqtqbjcio8&st=uuf8a24p&raw=1",
+    "title": "Siliwangi",
+    "artist": "Jasad",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiOxuSE643WHPXTW0qm4Zum7Tmf_tZ__7sLL2tRIFjbfKdDJLpEUuBtzo&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/ytii2op3xhvd33ps7h9rs/Jasad-KujangRompang.mp3?rlkey=tl157tgb90uoergb2e676b99c&st=e77ljqqh&raw=1",
+    "title": "Kujang Rompang",
+    "artist": "Jasad",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiOxuSE643WHPXTW0qm4Zum7Tmf_tZ__7sLL2tRIFjbfKdDJLpEUuBtzo&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/c554x35owyrs42xhiiskw/JASAD-GetihJangGetihV2.mp3?rlkey=k3ajpb7yhg2jpkfu85vfeidbf&st=vcz882xv&raw=1",
+    "title": "Getih Jang Getih V2",
+    "artist": "JASAD",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiOxuSE643WHPXTW0qm4Zum7Tmf_tZ__7sLL2tRIFjbfKdDJLpEUuBtzo&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/cpypvw6vqipupfbc5o5sr/JASAD-EillLeiyeah.mp3?rlkey=mcmtyvqkjm0buoh2gp1vow0zt&st=yxexhy9p&raw=1",
+    "title": "Eill Lei yeah",
+    "artist": "JASAD",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiOxuSE643WHPXTW0qm4Zum7Tmf_tZ__7sLL2tRIFjbfKdDJLpEUuBtzo&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/kmz93pefz8583alliqci2/RevengeTheFate-Katarsis.mp3?rlkey=4nkzpsvcxqdirmryc7khe74zr&st=ktgbfbxf&raw=1",
+    "title": "Katarsis",
+    "artist": "Revenge The Fate",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc7X1pzFUK_Rg0BEh4QHskofCsyjLGXAr2Rzq2bO3ItLMRC57S5THm9d0&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/wq1d46cfja5quc2hd5bu2/RevengeTheFate-Bencana.mp3?rlkey=du0zg2xywvyfleuubc3wggdbu&st=yjakzct2&raw=1",
+    "title": "Bencana",
+    "artist": "Revenge The Fate",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc7X1pzFUK_Rg0BEh4QHskofCsyjLGXAr2Rzq2bO3ItLMRC57S5THm9d0&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/rduyzho010sn99wqnbi9p/RevengeTheFate-Paranoid.mp3?rlkey=43dr82wftt6vbkemif20xh0tm&st=i413gh7h&raw=1",
+    "title": "Paranoid",
+    "artist": "Revenge The Fate",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc7X1pzFUK_Rg0BEh4QHskofCsyjLGXAr2Rzq2bO3ItLMRC57S5THm9d0&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/5dcg3fae1nlzrcecj2e34/RevengeTheFate-JENGAH-Pas-Band-Cover.mp3?rlkey=j770s4dfvgnrmfeooovbxyfqm&st=62anzic0&raw=1",
+    "title": "JENGAH Pas Band Cover",
+    "artist": "Revenge The Fate",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc7X1pzFUK_Rg0BEh4QHskofCsyjLGXAr2Rzq2bO3ItLMRC57S5THm9d0&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/clpikwgyhso9hsspiw3n6/RevengeTheFate-SYMPHONY-MENUJU-AKHIR.mp3?rlkey=h7omqp70glw3q4ycfvywck9dk&st=o8mq4lzy&raw=1anzic0&dl=0",
+    "title": "SYMPHONY MENUJU AKHIR",
+    "artist": "Revenge The Fate",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc7X1pzFUK_Rg0BEh4QHskofCsyjLGXAr2Rzq2bO3ItLMRC57S5THm9d0&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/ikldoz0ix7h2lkh0r5reu/RevengeTheFate-Continuous.mp3?rlkey=q3ijtxiu0tpchlcwrffb4ba1v&st=dzv11pn5&raw=1mq4lzy&dl=0anzic0&dl=0",
+    "title": "Continuous",
+    "artist": "Revenge The Fate",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc7X1pzFUK_Rg0BEh4QHskofCsyjLGXAr2Rzq2bO3ItLMRC57S5THm9d0&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/g0k45qr8eir3jssxb6j4i/REVENGETHEFATE-SAD-BUT-TRUE.mp3?rlkey=hnx0a15xmr1f2zly4vdh3eno1&st=zdqbbdjw&raw=1mq4lzy&dl=0anzic0&dl=0",
+    "title": "SAD BUT TRUE",
+    "artist": "REVENGE THE FATE",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc7X1pzFUK_Rg0BEh4QHskofCsyjLGXAr2Rzq2bO3ItLMRC57S5THm9d0&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/fsz1obsqffdi0luun8rli/RevengeTheFate-The-End.mp3?rlkey=9vs4rh4vmtg5igti61d52honr&st=2y0jxfpw&raw=1=0mq4lzy&dl=0anzic0&dl=0",
+    "title": "The End",
+    "artist": "Revenge The Fate",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc7X1pzFUK_Rg0BEh4QHskofCsyjLGXAr2Rzq2bO3ItLMRC57S5THm9d0&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/dcnya7bxfev38qb0srawl/REVENGETHEFATE-KASHMIR.mp3?rlkey=olj7ehpeffj8777441vun8y66&st=1fycl9hp&raw=1",
+    "title": "KASHMIR",
+    "artist": "REVENGE THE FATE",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc7X1pzFUK_Rg0BEh4QHskofCsyjLGXAr2Rzq2bO3ItLMRC57S5THm9d0&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/mlaymjyzoz5en7ggfd8c6/REVENGETHEFATE-AMERTA.mp3?rlkey=at8e61fb0mlsq78dh0sbhspnv&st=zw7wyiq7&raw=1",
+    "title": "AMERTA",
+    "artist": "REVENGE THE FATE",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc7X1pzFUK_Rg0BEh4QHskofCsyjLGXAr2Rzq2bO3ItLMRC57S5THm9d0&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/157bsueen26oc2glsiikd/RevengeTheFate-Witness.mp3?rlkey=gq42bfvz4p0x39k54r48o530q&st=5xka882b&raw=1",
+    "title": "Witness",
+    "artist": "Revenge The Fate",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc7X1pzFUK_Rg0BEh4QHskofCsyjLGXAr2Rzq2bO3ItLMRC57S5THm9d0&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/ng7ofh3ums3gf35hlg0a2/RevengeTheFate-Never-Forever.mp3?rlkey=muz4evlsk2nsx480ug3996ox3&st=cnaj244h&raw=1",
+    "title": "Never Forever",
+    "artist": "Revenge The Fate",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc7X1pzFUK_Rg0BEh4QHskofCsyjLGXAr2Rzq2bO3ItLMRC57S5THm9d0&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/3ncxv6pe24n9trkcoi6e1/REVENGETHEFATE-DARK-ERA.mp3?rlkey=rfps8994lk3w771q9ty4ehldw&st=k1uuu1xl&raw=1",
+    "title": "DARK ERA",
+    "artist": "REVENGE THE FATE",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc7X1pzFUK_Rg0BEh4QHskofCsyjLGXAr2Rzq2bO3ItLMRC57S5THm9d0&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/bcgz9f7cfuu92iwnoq4qt/RevengeTheFate-Sinsera.mp3?rlkey=h6qbuyt4ymnjcn7usgznameb1&st=em7b4b6b&raw=1",
+    "title": "Sinsera",
+    "artist": "Revenge The Fate",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc7X1pzFUK_Rg0BEh4QHskofCsyjLGXAr2Rzq2bO3ItLMRC57S5THm9d0&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/0xb0re0zhytkuh8vcarg8/RevengeTheFate-Darah-Serigala.mp3?rlkey=echvh563fyzpu92t9flpwrvjw&st=we8b58uw&raw=1",
+    "title": "Darah Serigala",
+    "artist": "Revenge The Fate",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc7X1pzFUK_Rg0BEh4QHskofCsyjLGXAr2Rzq2bO3ItLMRC57S5THm9d0&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/em2ur5h25s1ji9it5671z/RevengeTheFate-Pembalasan.mp3?rlkey=ui0kyjg50rl2vtku8l7dnfupi&st=e2nxvrx3&raw=1",
+    "title": "Pembalasan",
+    "artist": "Revenge The Fate",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc7X1pzFUK_Rg0BEh4QHskofCsyjLGXAr2Rzq2bO3ItLMRC57S5THm9d0&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/v54o39bygesjgy1mn690h/RevengeTheFate-Ambisi.mp3?rlkey=69ewc3zrfx3iihobgyow2xmv5&st=eapytn4o&raw=1",
+    "title": "Ambisi",
+    "artist": "Revenge The Fate",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc7X1pzFUK_Rg0BEh4QHskofCsyjLGXAr2Rzq2bO3ItLMRC57S5THm9d0&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/6moedgzxnzx25kwagihtd/Seringai-AkselerasiMaksimum.mp3?rlkey=k48iyc2gphtqo7wk7nf4qlrb4&st=c64dlfe8&raw=1",
+    "title": "Akselerasi Maksimum",
+    "artist": "Seringai",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs0J9qz2ePAp1l9y2wcjEOTP8gvAoAD6GhjBFK1NI0WYEd5-2y6S_SK0Nz&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/clko63nl49ieodt6i3kfn/Seringai-CitraNatural.mp3?rlkey=cpy74tgswidzadtdsk2mthuwh&st=s7tsylz8&raw=1",
+    "title": "Citra Natural",
+    "artist": "Seringai",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs0J9qz2ePAp1l9y2wcjEOTP8gvAoAD6GhjBFK1NI0WYEd5-2y6S_SK0Nz&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/9ww52ftvwm30yuu5h5ug1/Seringai-AdrenalinMerusuh.mp3?rlkey=uxkjm09y5iwfcb9x77b14d6ac&st=qdtmlyhx&raw=1",
+    "title": "Adrenalin Merusuh",
+    "artist": "Seringai",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs0J9qz2ePAp1l9y2wcjEOTP8gvAoAD6GhjBFK1NI0WYEd5-2y6S_SK0Nz&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/75oj7ez3hrqyfbaw086v3/Seringai-DilarangDiBandung.mp3?rlkey=todgb31srbrc6893eirnggt8d&st=brbf6u53&raw=1",
+    "title": "Dilarang Di Bandung",
+    "artist": "Seringai",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs0J9qz2ePAp1l9y2wcjEOTP8gvAoAD6GhjBFK1NI0WYEd5-2y6S_SK0Nz&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/x7feom3ukp4dstfwt1aw4/Seringai-Tragedi.mp3?rlkey=4vi4ipy9e4341m3zcgvk9p1of&st=3r0d79i0&raw=1",
+    "title": "Tragedi",
+    "artist": "Seringai",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs0J9qz2ePAp1l9y2wcjEOTP8gvAoAD6GhjBFK1NI0WYEd5-2y6S_SK0Nz&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/jf6b26akp4b2v21tmf0oy/Seringai-MengadiliPersepsi-BermainTuhan.mp3?rlkey=h7u2mcajrtobz2hhjfqd8jvji&st=ew0pr5h8&raw=1",
+    "title": "Mengadili Persepsi Bermain Tuhan",
+    "artist": "Seringai",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs0J9qz2ePAp1l9y2wcjEOTP8gvAoAD6GhjBFK1NI0WYEd5-2y6S_SK0Nz&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/zyse9cs0ef4kctpdy64w7/Ishtarkult-SeringaifeatDanilla.mp3?rlkey=yljbv2eydgmcry26ov0nbpplr&st=yiy6v5f1&raw=1=ew0pr5h8&dl=0",
+    "title": "Seringai feat Danilla",
+    "artist": "Ishtarkult",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs0J9qz2ePAp1l9y2wcjEOTP8gvAoAD6GhjBFK1NI0WYEd5-2y6S_SK0Nz&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/vvmn4cq1nskeludx9w53m/SERINGAI-AdrenalinMerusuhfeatIkoUwais.mp3?rlkey=urvphjz6zmfehfxou658ooydq&st=8r7q9xz4&raw=1&dl=0=ew0pr5h8&dl=0",
+    "title": "Adrenalin Merusuh feat Iko Uwais",
+    "artist": "SERINGAI",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs0J9qz2ePAp1l9y2wcjEOTP8gvAoAD6GhjBFK1NI0WYEd5-2y6S_SK0Nz&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/q2gb89polzyqtslgsv6ev/SERINGAI-Selamanya.mp3?rlkey=j8d25x1mkee6xszxzeea5mc1r&st=fxhm87hg&raw=1",
+    "title": "Selamanya",
+    "artist": "SERINGAI",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs0J9qz2ePAp1l9y2wcjEOTP8gvAoAD6GhjBFK1NI0WYEd5-2y6S_SK0Nz&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/8fue2j0gbw0k3v42ucykm/SiksaKubur-PasukanJiwaTerbelakang.mp3?rlkey=wuluuw4t86krkix9m70x32kwy&st=buggbzdb&raw=1",
+    "title": "Pasukan Jiwa Terbelakang",
+    "artist": "SiksaKubur",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThzVFdpTic1tJk1KUXQGpWQqo9N1F3uTGOoZGk62zDQcHFx1EZHR1RFcuz&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/6t1fd7fozls8nuwdhpelm/Siksakubur-BurungBangkai.mp3?rlkey=rbterxnsgy2q5ut4ms92hp6ez&st=rn8ucs4a&raw=1",
+    "title": "Burung Bangkai",
+    "artist": "Siksakubur",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThzVFdpTic1tJk1KUXQGpWQqo9N1F3uTGOoZGk62zDQcHFx1EZHR1RFcuz&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/19mtzyuhd84scok3mzjvm/Siksakubur-MerahHitamHijau.mp3?rlkey=jls5p5i3j6lmy9owr2rkwlu8g&st=eedz8663&raw=1",
+    "title": "Merah Hitam Hijau",
+    "artist": "Siksakubur",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThzVFdpTic1tJk1KUXQGpWQqo9N1F3uTGOoZGk62zDQcHFx1EZHR1RFcuz&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/8futfyzsbbmm2wxzlm0xv/SiksaKubur-RenounceMe.mp3?rlkey=sukxeprbdn4kl9fvqrj2ve6am&st=s6p3tw8d&raw=1",
+    "title": "Renounce Me",
+    "artist": "SiksaKubur",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThzVFdpTic1tJk1KUXQGpWQqo9N1F3uTGOoZGk62zDQcHFx1EZHR1RFcuz&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/h6rd6cshzt0nq9qa63zkg/Beside-AkuAdalahTuhan.mp3?rlkey=45k3cosronrhswzdx8jzt2h9e&st=brvluird&raw=1",
+    "title": "Aku Adalah Tuhan",
+    "artist": "Beside",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmgOOeCJEeOoIdP11WDSpabucVfNA2-cWn7nJlzbyuTEgFVeaiYBkkY6JZ&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/07bucyi0leya1br5nb8ut/Beside-ElevenHeroes.mp3?rlkey=xnldvytnxr2h2w0rp2f6le89h&st=0vjxzcrs&raw=1",
+    "title": "Eleven Heroes",
+    "artist": "Beside",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmgOOeCJEeOoIdP11WDSpabucVfNA2-cWn7nJlzbyuTEgFVeaiYBkkY6JZ&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/vrwju3n8gnryvcpyqvtz5/Avenged-Sevenfold-Hail-To-The-King.mp3?rlkey=027qwyz4zdpgaji1kj8h5y7w3&st=n4yq9mxe&raw=1",
+    "title": "Hail To The King",
+    "artist": "Avenged Sevenfold",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8eoa6J5gL5tu_vg8LZB9k2P0ex-cwfkyOmRC-aVQ1z01B9aysBfPizgStLh-EovYOhUmNMwlFLHF--lo_7SXf6VW0-YZiPUGbvyQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/fkr9l0cij16i8pb8xjleu/Avenged-Sevenfold-A-Little-Piece-Of-Heaven.mp3?rlkey=odr92wkogltt66j3cu821rdye&st=dzydq98x&raw=1",
+    "title": "A Little Piece Of Heaven",
+    "artist": "Avenged Sevenfold",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8eoa6J5gL5tu_vg8LZB9k2P0ex-cwfkyOmRC-aVQ1z01B9aysBfPizgStLh-EovYOhUmNMwlFLHF--lo_7SXf6VW0-YZiPUGbvyQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/c1ynyxqbmgv5auf8lr4w5/Avenged-Sevenfold-So-Far-Away.mp3?rlkey=51ogiqch9vwwje6hp7k0pwwjz&st=3lkgjca1&raw=1",
+    "title": "So Far Away",
+    "artist": "Avenged Sevenfold",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8eoa6J5gL5tu_vg8LZB9k2P0ex-cwfkyOmRC-aVQ1z01B9aysBfPizgStLh-EovYOhUmNMwlFLHF--lo_7SXf6VW0-YZiPUGbvyQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/r2rs23ypuy78hxtqytf8v/Scorpions-Holiday.mp3?rlkey=n0fwpptyl7rwqabz19ee8lmtb&st=6bz3h9uf&raw=1",
+    "title": "Holiday",
+    "artist": "Scorpions",
+    "img": "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-202796-Scorpions_Return-To-Forever_c-Oliver-Rath_02-66642158.jpg?w=1581&h=1054&crop=1"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/nceipx3o9xnu6lr0j070o/Scorpions-Wind-of-Change.mp3?rlkey=40gtuj4s5iqjqhm6olhqmqj54&st=0sse5hhc&raw=1",
+    "title": "Wind of Change",
+    "artist": "Scorpions",
+    "img": "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-202796-Scorpions_Return-To-Forever_c-Oliver-Rath_02-66642158.jpg?w=1581&h=1054&crop=1"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/9pr34iiql79pdylq3v7xh/Scorpions-Hotel_California.mp3?rlkey=azwzh20bm7elw5gsp7yhq1vro&st=qd7fcnld&raw=1",
+    "title": "Hotel California",
+    "artist": "Scorpions",
+    "img": "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-202796-Scorpions_Return-To-Forever_c-Oliver-Rath_02-66642158.jpg?w=1581&h=1054&crop=1"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/d0gc9vqlguvfd0v75gldi/Scorpions-Send-Me-A-Angel.mp3?rlkey=lytgasjhisx79ae17dn04g42g&st=o9copn99&raw=10",
+    "title": "Send Me A Angel",
+    "artist": "Scorpions",
+    "img": "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-202796-Scorpions_Return-To-Forever_c-Oliver-Rath_02-66642158.jpg?w=1581&h=1054&crop=1"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/md2q72jf5qsykqzy86p4x/Scorpions-You-Are-The-Champion.mp3?rlkey=fhtwp9iyvtut8fz7mbp5fq93w&st=6a64s4yt&raw=10",
+    "title": "You Are The Champion",
+    "artist": "Scorpions",
+    "img": "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-202796-Scorpions_Return-To-Forever_c-Oliver-Rath_02-66642158.jpg?w=1581&h=1054&crop=1"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/jovbia8nhyro7hbau1caj/Scorpions-Always-Somewhere.mp3?rlkey=gth3a4mkbbo4gsb3jetccgw5i&st=acwyl621&raw=1&dl=00",
+    "title": "Always Somewhere",
+    "artist": "Scorpions",
+    "img": "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-202796-Scorpions_Return-To-Forever_c-Oliver-Rath_02-66642158.jpg?w=1581&h=1054&crop=1"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/kk5dzkolv7efg1hfh40al/Scorpions-When-The-Smoke-Is-Going-Down.mp3?rlkey=ebnd9k86mxpbskv12zy0tru2v&st=pidqkdkt&raw=10&dl=00",
+    "title": "When The Smoke Is Going Down",
+    "artist": "Scorpions",
+    "img": "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-202796-Scorpions_Return-To-Forever_c-Oliver-Rath_02-66642158.jpg?w=1581&h=1054&crop=1"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/d0jis0agadnryjzqxgv8d/TheBlackDahliaMurder-EyesOfThousand.mp3?rlkey=dbonpngptjmtlm58klzubf98h&st=6iycl28g&raw=1",
+    "title": "Eyes Of Thousand",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/7yytgxcg3c3s5ol5v9p82/TheBlackDahliaMurder-ChristDeformed.mp3?rlkey=0opzn2m04vtb53jdjftgkyupy&st=97thxrp6&raw=1",
+    "title": "Christ Deformed",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/0fg67x3k1xde8pp16qv49/TheBlackDahliaMurder-Necropolis.mp3?rlkey=aod24qk0lnmu1jhfij88xrvr8&st=72i548px&raw=1hxrp6&dl=0",
+    "title": "Necropolis",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/9qf1wht0wfyp0bgw3kg9e/TheBlackDahliaMurder-DeathPanorama.mp3?rlkey=9gvtks9wp7dddktvajhop49y9&st=87zigjw8&raw=1",
+    "title": "Death Panorama",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/qrmdqmvziwx13m1bp9rar/TheBlackDahliaMurder-ThatWhichErodesTheMostTenderOfThings.mp3?rlkey=tgbvgcdh81prhr4uwcdld77ro&st=ilvl28ei&raw=1gjw8&dl=0",
+    "title": "That Which Erodes The Most Tender Of Things",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/0xx9tbl8lnlwaxcukqz9n/TheBlackDahliaMurder-DenouncedDisgraced.mp3?rlkey=xtjrbkkalebee4f34rdgpfq0o&st=g9dxuim6&raw=1",
+    "title": "Denounced Disgraced",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/kpxsomxk7hq4b2dmo9476/TheBlackDahliaMurder-BlackValor.mp3?rlkey=jm5cdcjjyu4ibiosujnx4vwky&st=sysvbv8e&raw=1=g9dxuim6&dl=0",
+    "title": "Black Valor",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/nnz53kza71gmdy5q8dwod/TheBlackDahliaMurder-IWillReturn.mp3?rlkey=n6o8ufbd5pfbl9mj85el2x7e3&st=1g9nfiqg&raw=1e&dl=0=g9dxuim6&dl=0",
+    "title": "I Will Return",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21d
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/mx480dnjhvari8voccc9i/TheBlackDahliaMurder-TheGrave-Robber-sWork.mp3?rlkey=rei8l92xldmnd66pmzbjrbh4a&st=owkt5vjq&raw=1",
+    "title": "The Grave Robber sWork",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/lv4lm03hfyjw647gjh0ql/TheBlackDahliaMurder-AShrinetoMadness.mp3?rlkey=z1ed1908vsnl1rtalscdoxddo&st=ygxv6t2m&raw=1&st=owkt5vjq&dl=0",
+    "title": "A Shrine to Madness",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/7vmz2vi1h407vf7gr8ddl/TheBlackDahliaMurder-MoonlightEquilibrium.mp3?rlkey=q34fpbahwzcl6u2ojtujvwjw6&st=pzbo3ewq&raw=1gxv6t2m&dl=0&st=owkt5vjq&dl=0",
+    "title": "Moonlight Equilibrium",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/5qujd77ptrn067wdznayd/TheBlackDahliaMurder-OnStirringSeasofSaltedBlood.mp3?rlkey=5iahpx7n0gnfyvu1u0w2so1s2&st=5p0epvpk&raw=1dl=0",
+    "title": "On Stirring Seas of Salted Blood",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/xaoxmrmlckexaqf0sbtj4/TheBlackDahliaMurder-ConspiringWiththeDammed.mp3?rlkey=cox8xb82di59mfh52zbr07ikv&st=d953xwds&raw=12so1s2&st=5p0epvpk&dl=0dl=0",
+    "title": "Conspiring Withthe Dammed",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/ckunfskyzqla4onknkkef/TheBlackDahliaMurder-TheWindow.mp3?rlkey=t15tobmuakfo8b8ar0kyclvvk&st=rq1jbrik&raw=10dl=0",
+    "title": "The Window",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/xbh1w26fzx0dtbz2tstca/TheBlackDahliaMurder-CarbonizedinCruciform.mp3?rlkey=k6d5iks4cuapuqo8oesizj9gf&st=girqomw6&raw=1&dl=00dl=0",
+    "title": "Carbonized in Cruciform",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/5a2zhw1mog8jxjn4sejqx/TheBlackDahliaMurder-DenofthePicquerist.mp3?rlkey=71duho61ckxvyckxl7z0okeut&st=to1nbofm&raw=1",
+    "title": "Denof the Picquerist",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/7ae0tf6l73fvu79ia47hs/TheBlackDahliaMurder-MalenchantmentsoftheNecrosphere.mp3?rlkey=udwtjl5u9ozecbexyq3t494p4&st=qynw9he3&raw=1=to1nbofm&dl=0",
+    "title": "Malenchantments of the Necrosphere",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/huzpgeuenzh41fzs1tn1b/TheBlackDahliaMurder-TheRaven.mp3?rlkey=lpmzw9gya3g3qbrnswldy8tl0&st=vi4e59lc&raw=1xyq3t494p4&st=qynw9he3&dl=0=to1nbofm&dl=0",
+    "title": "The Raven",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/xgkm356bwcv5s79xeqve3/TheBlackDahliaMurder-GreatBurningNullifier.mp3?rlkey=s850o93a6olhqus1cg2uhhw7j&st=kw1ihp7q&raw=1dl=0xyq3t494p4&st=qynw9he3&dl=0=to1nbofm&dl=0",
+    "title": "Great Burning Nullifier",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/pm79tv04mbj7beo2lg0vd/TheBlackDahliaMurder-BloodintheInk.mp3?rlkey=0gmh0rb122nt02hmvv72d5jle&st=s7kzo4b8&raw=1&st=kw1ihp7q&dl=0dl=0xyq3t494p4&st=qynw9he3&dl=0=to1nbofm&dl=0",
+    "title": "Blood in the Ink",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/zts9la8ijcl9l09b4h53z/TheBlackDahliaMurder-BloodMine.mp3?rlkey=jmqfcxhy8aq71s443ovlvjhdj&st=jgausw3o&raw=1",
+    "title": "Blood Mine",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/mqhbbkppr00femr3ma96x/TheBlackDahliaMurder-Control.mp3?rlkey=egmu9gi91b1iqpg2vgahnrhot&st=kbbvpdjj&raw=1",
+    "title": "Control",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/1hqlvnpmnfrcr74idzxvi/TheBlackDahliaMurder-EveryRopeaNoose.mp3?rlkey=2jwhp7c3n6yp6r2gdff62u53b&st=o92fxqw1&raw=1",
+    "title": "Every Ropea Noose",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/i5uf70bnri4qpf8czc7u2/TheBlackDahliaMurder-GoatofDeparture.mp3?rlkey=y6zixpskx1rhbfm1vpcooaes2&st=ur6gyq5m&raw=1",
+    "title": "Goat of Departure",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/k9h56w3lc8xb2ij7yenn0/TheBlackDahliaMurder-InHellIsWhereSheWaitsforMe.mp3?rlkey=g9y5xryyw16b1664o3tzesi72&st=4uaq3v76&raw=1",
+    "title": "In Hell Is Where She Waits for Me",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/dz5mj8ckrt2jdzibzvibe/TheBlackDahliaMurder-IntotheEverblack.mp3?rlkey=pzojmjafmic3ww1tratro96jk&st=6llt4ps6&raw=1",
+    "title": "Into the Everblack",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/i0kuu4q1b4908dapyq100/TheBlackDahliaMurder-MapofScars.mp3?rlkey=1sw0jofsjxwo614yt7qgvytrm&st=lqyjefkt&raw=1",
+    "title": "Map of Scars",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/b1re2l9xwrmmjgysg3tzw/TheBlackDahliaMurder-PhantomLimbMasturbation.mp3?rlkey=69dwz42oz0d6xfxheqef36msq&st=bqgodxnp&raw=1",
+    "title": "Phantom Limb Masturbation",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/c8j5wblmtjsz0nskknqga/TheBlackDahliaMurder-RapedinHatredbyVinesofThorn.mp3?rlkey=4cjfehdkrd05ko8ok57mrkqwh&st=im8smusb&raw=1",
+    "title": "Raped in Hatred by Vines of Thorn",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/8u3hnd0f6jxuodhvih3u2/TheBlackDahliaMurder-TheirBelovedAbsentee.mp3?rlkey=m1of8l59qt074ncmy5llcfwj3&st=tr7pou12&raw=1",
+    "title": "Their Beloved Absentee",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/0ktoebz5zi6ji2cw2ocbl/TheBlackDahliaMurder-3Populous.mp3?rlkey=7nbrphrrmmt0f2bye9hkjl0z2&st=831rmytx&raw=1",
+    "title": "Populous",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/grqf63nnd8uqxalm7qjuh/TheBlackDahliaMurder-2RebelWithoutaCar.mp3?rlkey=3kajaxs1wohq2ojp23pctdgs5&st=x6818cep&raw=1",
+    "title": "Rebel Without a Car",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/o257xhv97o9u937wkgjiy/TheBlackDahliaMurder-1RippedUp.mp3?rlkey=28izrwsudp4bavcdz9kmrbh0k&st=m9biqcxm&raw=1",
+    "title": "Ripped Up",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/wwg9ewt9tfk9prhsjtisr/TheBlackDahliaMurder-ToABreathlessOblivion.mp3?rlkey=jjorvtj4qdlct8uaqcvtjth8t&st=vryss50t&raw=1",
+    "title": "To A Breathless Oblivion",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/gvl0fpbumlumisgmodjgr/TheBlackDahliaMurder-ClimacticDegradation.mp3?rlkey=9jbih2cf0rd5tdkg7ylyp3dne&st=6qvm9ks7&raw=1",
+    "title": "Climactic Degradation",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/2exf8x0jmn08jld2km08k/TheBlackDahliaMurder-OfDarknessSpawned.mp3?rlkey=c6heq211qp0nz2i6sa5pme3jh&st=ijwwlmgi&raw=1",
+    "title": "Of Darkness Spawned",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/cvwxjxgq8e09ykt19wgkd/TheBlackDahliaMurder-DeathmaskDivine.mp3?rlkey=e31m8sazi6mejshs376hsup04&st=mi1jha0n&raw=1ijwwlmgi&dl=0",
+    "title": "Deathmask Divine",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/u5g6446hnnrxn4kj293f8/TheBlackDahliaMurder-Nocturnal.mp3?rlkey=5dbjmsai85yycxfn67od3wil1&st=htwt8wgo&raw=1",
+    "title": "Nocturnal",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/g9eo4001gciym079v4quv/TheBlackDahliaMurder-IWorshipOnlyWhatYouBleed.mp3?rlkey=u03dh18d86idb93ytmswh9y9w&st=uitv2vt9&raw=1",
+    "title": "I Worship Only What You Bleed",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/uzlqwfqahce6civ7du0s5/TheBlackDahliaMurder-VirallyYours.mp3?rlkey=7zlxcbqks5rc98khs8egtw8p8&st=qy02r80c&raw=1",
+    "title": "Virally Yours",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/c00oqtpc8x9xrvxqqps32/TheBlackDahliaMurder-WhatAHorribleNightToHaveACurse.mp3?rlkey=d3yteqgtg6vjbek70cjkj8awf&st=qb4js75n&raw=1",
+    "title": "What A Horrible Night To Have A Curse",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/0jd2f51azrrk6zjg1ln9k/TheBlackDahliaMurder-EverythingWentBlack.mp3?rlkey=wx8vn8utyes5gymu0u6c1ig5u&st=xqe3qckn&raw=1",
+    "title": "Everything Went Black",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+    {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/nwt13m7vgl1k4i0xdq5tt/TheBlackDahliaMurder-Warborn.mp3?rlkey=vbr3xgxqetvzl4lmluv8ix6hc&st=x54fj4b4&raw=1",
+    "title": "Warborn",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/wdorwfa0iihufu408hypd/TheBlackDahliaMurder-Miasma.mp3?rlkey=vbnnqqy3e2hkdbas67cbqyu4n&st=fz08tpqx&raw=1",
+    "title": "Miasma",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/rzgi6drf3m1zxceb319io/TheBlackDahliaMurder-SpiteSuicide.mp3?rlkey=kjvsxmm580w9n2k2mz30ku22g&st=v9mtw1eq&raw=1",
+    "title": "Spite Suicide",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/hi6ptb9sec1g0twwbf836/TheBlackDahliaMurder-Miscarriage.mp3?rlkey=qne87np19qq6vkyu6ppxlctch&st=fi38vbwz&raw=11eq&dl=0",
+    "title": "Miscarriage",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/2ub5iv6eb963m44u7gxi5/TheBlackDahliaMurder-DaveGoestoHollywood.mp3?rlkey=g0podyu9x93o4rmw8j4xpal07&st=zxlhp2my&raw=1wz&dl=01eq&dl=0",
+    "title": "Dave Goes to Hollywood",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/ro12078y47hktzlf56be1/TheBlackDahliaMurder-NoveltyCrosses.mp3?rlkey=4pwx4ij6m3pve93rg946e3zuo&st=tsjzx0eq&raw=1t=zxlhp2my&dl=0wz&dl=01eq&dl=0",
+    "title": "Novelty Crosses",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/ak3duhrkwi8ougpl1y4nu/TheBlackDahliaMurder-AVulgarPicture.mp3?rlkey=242fnp4ax7yphortd4woa2yer&st=83ip6vvx&raw=1zx0eq&dl=0t=zxlhp2my&dl=0wz&dl=01eq&dl=0",
+    "title": "A Vulgar Picture",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/dlwaqmazq9j518g7ys5rw/TheBlackDahliaMurder-StatutoryApe.mp3?rlkey=oo0a3jlsgdrlqcixcnap5hzum&st=efn4h64d&raw=1p6vvx&dl=0zx0eq&dl=0t=zxlhp2my&dl=0wz&dl=01eq&dl=0",
+    "title": "Statutory Ape",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/hfsvpd7y7bzwmkfgxxzjd/TheBlackDahliaMurder-Flies.mp3?rlkey=gswk8l6w9baierl23i6xl8wsv&st=jzkm9rax&raw=164d&dl=0p6vvx&dl=0zx0eq&dl=0t=zxlhp2my&dl=0wz&dl=01eq&dl=0",
+    "title": "Flies",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/b56ues3hxvjbkdghd6g4e/TheBlackDahliaMurder-I-mCharming.mp3?rlkey=uktrsdadcw64iskpcsjs4qo4m&st=b43syqll&raw=1064d&dl=0p6vvx&dl=0zx0eq&dl=0t=zxlhp2my&dl=0wz&dl=01eq&dl=0",
+    "title": "Im Charming",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/va9dzbr51t599g37ekefl/TheBlackDahliaMurder-BuiltforSin.mp3?rlkey=dmiywi7z3pt07miu6zmgog538&st=51io4s02&raw=1ll&dl=0064d&dl=0p6vvx&dl=0zx0eq&dl=0t=zxlhp2my&dl=0wz&dl=01eq&dl=0",
+    "title": "Built for Sin",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/objuhomn3q8lfe4y8ad03/TheBlackDahliaMurder-Apex.mp3?rlkey=8su5tepx7pd2tgb5v0egoese3&st=218a6whq&raw=1",
+    "title": "Apex",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/kcpbc1jkmtasy6ebcd4qd/TheBlackDahliaMurder-ClosedCasketRequiem.mp3?rlkey=v2idnvczjsh8edgit5t06qakc&st=km08ii1v&raw=1",
+    "title": "Closed Casket Requiem",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/c5cmwqpo1xqowqud0w82k/TheBlackDahliaMurder-HymnfortheWretched.mp3?rlkey=7fo2cgv7wqofou57mtp7l59tn&st=inntremx&raw=1",
+    "title": "Hymn for the Wretched",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/6hjdojbp4l760eajyhisu/TheBlackDahliaMurder-TheBlackestIncarnation.mp3?rlkey=fnspffe7auzfeww6mku68otat&st=7jnfdza0&raw=1",
+    "title": "The Blackest Incarnation",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpeg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/z0kd5bkvoisiesmw7g47f/Nirvana-Breed.mp3?rlkey=qi3tmyjkay8st7nme2s9cyhbi&st=i1f4048j&raw=1",
+    "title": "Breed",
+    "artist": "Nirvana",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs9WsKYs7hzEBWxJDGxitSwRqqyNEWnDvTKLlac_yfpS3TfVFicJwZLAA&s=10yQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/3mvrog6vnjo1rh8daccmz/Nirvana-Come_As_You_Are.mp3?rlkey=yixnpcvsbvj4zugs9cqlxrr02&st=96nrg6o9&raw=1",
+    "title": "Come As You Are",
+    "artist": "Nirvana",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs9WsKYs7hzEBWxJDGxitSwRqqyNEWnDvTKLlac_yfpS3TfVFicJwZLAA&s=10yQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/52lsjmdimonymjtcn2lkb/Nirvana-Drain_You.mp3?rlkey=cu02tuwp3ast45tx9rvwbx2dw&st=wn38x058&raw=1",
+    "title": "Drain You",
+    "artist": "Nirvana",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs9WsKYs7hzEBWxJDGxitSwRqqyNEWnDvTKLlac_yfpS3TfVFicJwZLAA&s=10yQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/pwrqdyj5yh62hs6uxqz17/Nirvana-Endless_Nameless.mp3?rlkey=4by3a5w3zlqfnsiwywfop31x1&st=p5kiqv8u&raw=1",
+    "title": "Endless Nameless",
+    "artist": "Nirvana",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs9WsKYs7hzEBWxJDGxitSwRqqyNEWnDvTKLlac_yfpS3TfVFicJwZLAA&s=10yQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/34vspq53c13kwvi2ch307/Nirvana-In_Bloom.mp3?rlkey=kmfkaon6cfttb13ihdnz8p9gk&st=7117whzb&raw=1",
+    "title": "In Bloom",
+    "artist": "Nirvana",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs9WsKYs7hzEBWxJDGxitSwRqqyNEWnDvTKLlac_yfpS3TfVFicJwZLAA&s=10yQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/pdp0jon2vs8r6zc7xsy8g/Nirvana-Lithium.mp3?rlkey=hzluzzuf090cua5zza2dyg230&st=5lavshar&raw=1",
+    "title": "Lithium",
+    "artist": "Nirvana",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs9WsKYs7hzEBWxJDGxitSwRqqyNEWnDvTKLlac_yfpS3TfVFicJwZLAA&s=10yQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/h0j276yri75ywlbyyk5jg/Nirvana-Lounge_Act.mp3?rlkey=povpy79be5fgldzoteurbzi4t&st=90xs8shu&raw=1",
+    "title": "Lounge Act",
+    "artist": "Nirvana",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs9WsKYs7hzEBWxJDGxitSwRqqyNEWnDvTKLlac_yfpS3TfVFicJwZLAA&s=10yQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/npevdbdzvmhqwts8509m1/Nirvana-On_A_Plain.mp3?rlkey=sxh9wkjidn1vlvn6319mkiq3x&st=0xv2kawi&raw=1",
+    "title": "On A Plain",
+    "artist": "Nirvana",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs9WsKYs7hzEBWxJDGxitSwRqqyNEWnDvTKLlac_yfpS3TfVFicJwZLAA&s=10yQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/carm4uncmxwoaj97x35th/Nirvana-Smells_Like_Teen_Spirit.mp3?rlkey=uptm8kjw2hlafwrfp32w0um7u&st=xvc15n6y&raw=1",
+    "title": "Smells Like Teen Spirit",
+    "artist": "Nirvana",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs9WsKYs7hzEBWxJDGxitSwRqqyNEWnDvTKLlac_yfpS3TfVFicJwZLAA&s=10yQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/b6ylduu83vrfp795hm4kw/Nirvana-Stay_Away.mp3?rlkey=4qnggpjzkg3a2u3ekc7evhttw&st=486g2uky&raw=1",
+    "title": "Stay Away",
+    "artist": "Nirvana",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs9WsKYs7hzEBWxJDGxitSwRqqyNEWnDvTKLlac_yfpS3TfVFicJwZLAA&s=10yQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/isvnbz7tmu2irlp8bvt57/Nirvana-Territorial_Pissings.mp3?rlkey=jssy1yg09n9bmje91prunhoi8&st=zdcvk4km&raw=1",
+    "title": "Territorial Pissings",
+    "artist": "Nirvana",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs9WsKYs7hzEBWxJDGxitSwRqqyNEWnDvTKLlac_yfpS3TfVFicJwZLAA&s=10yQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/divhzh2zxtrtzgnw9retk/Avenged_Sevenfold-Buried_Alive.mp3?rlkey=2j6cr949h2wooilowcdw7h0d0&st=o47bczts&raw=1",
+    "title": "Buried Alive",
+    "artist": "Avenged Sevenfold",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8eoa6J5gL5tu_vg8LZB9k2P0ex-cwfkyOmRC-aVQ1z01B9aysBfPizgStLh-EovYOhUmNMwlFLHF--lo_7SXf6VW0-YZiPUGbvyQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/zkxtoywjesgrdi1gdjp61/Avenged_Sevenfold-Danger_Line.mp3?rlkey=n0aus4zqx9901ihum6gaj5891&st=pc2udqjw&raw=1",
+    "title": "Danger Line",
+    "artist": "Avenged Sevenfold",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8eoa6J5gL5tu_vg8LZB9k2P0ex-cwfkyOmRC-aVQ1z01B9aysBfPizgStLh-EovYOhUmNMwlFLHF--lo_7SXf6VW0-YZiPUGbvyQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/o92catufpmrwpo0uiq6sk/Avenged_Sevenfold-Natural_Born_Killer.mp3?rlkey=8f9fqgwu4u4942ht6hsgzilz4&st=pt9lws4s&raw=1",
+    "title": "Natural Born Killer",
+    "artist": "Avenged Sevenfold",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8eoa6J5gL5tu_vg8LZB9k2P0ex-cwfkyOmRC-aVQ1z01B9aysBfPizgStLh-EovYOhUmNMwlFLHF--lo_7SXf6VW0-YZiPUGbvyQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/2tiwqo2v0ju1rb52uot2d/Avenged_Sevenfold-Nightmare.mp3?rlkey=ynbnki9n6panmjvhn84rsje37&st=qxyklk73&raw=1",
+    "title": "Nightmare",
+    "artist": "Avenged Sevenfold",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8eoa6J5gL5tu_vg8LZB9k2P0ex-cwfkyOmRC-aVQ1z01B9aysBfPizgStLh-EovYOhUmNMwlFLHF--lo_7SXf6VW0-YZiPUGbvyQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/zz40zo6m9ap53bnj5vf1a/Avenged_Sevenfold-So_Far_Away.mp3?rlkey=ijrtm22mwbeluri7w6y4d1h9v&st=r5nks52n&raw=1",
+    "title": "So Far Away",
+    "artist": "Avenged Sevenfold",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8eoa6J5gL5tu_vg8LZB9k2P0ex-cwfkyOmRC-aVQ1z01B9aysBfPizgStLh-EovYOhUmNMwlFLHF--lo_7SXf6VW0-YZiPUGbvyQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/1wjwvp3xe5iqw6xbac11m/Avenged_Sevenfold-Welcome_to_the_Family.mp3?rlkey=b4vps5szqnv7bjh4zqo7x94x2&st=i86ffd62&raw=1",
+    "title": "Welcome to the Family",
+    "artist": "Avenged Sevenfold",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8eoa6J5gL5tu_vg8LZB9k2P0ex-cwfkyOmRC-aVQ1z01B9aysBfPizgStLh-EovYOhUmNMwlFLHF--lo_7SXf6VW0-YZiPUGbvyQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/unx1lhodbocf6mjdl5s3k/Avenged_Sevenfold-Fiction.mp3?rlkey=wzdsy8wnpanubd2nz8fwmu83g&st=3ilcsjuo&raw=1",
+    "title": "Fiction",
+    "artist": "Avenged Sevenfold",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8eoa6J5gL5tu_vg8LZB9k2P0ex-cwfkyOmRC-aVQ1z01B9aysBfPizgStLh-EovYOhUmNMwlFLHF--lo_7SXf6VW0-YZiPUGbvyQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/aiw0u53o5gbozukmmtzom/Avenged_Sevenfold-God_Hates_Us.mp3?rlkey=cslmmdt3eivv0ufz6e7l19c7m&st=xjawqsro&raw=1",
+    "title": "God Hates Us",
+    "artist": "Avenged Sevenfold",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8eoa6J5gL5tu_vg8LZB9k2P0ex-cwfkyOmRC-aVQ1z01B9aysBfPizgStLh-EovYOhUmNMwlFLHF--lo_7SXf6VW0-YZiPUGbvyQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/d5ava8rq2iwgkifes3ww9/Avenged_Sevenfold-Lost_It_All_-Bonus_Track.mp3?rlkey=avtqxrmh84d3ylcuw6hknvhrs&st=pz71gpom&raw=1",
+    "title": "Lost It All -Bonus Track",
+    "artist": "Avenged Sevenfold",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8eoa6J5gL5tu_vg8LZB9k2P0ex-cwfkyOmRC-aVQ1z01B9aysBfPizgStLh-EovYOhUmNMwlFLHF--lo_7SXf6VW0-YZiPUGbvyQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/2i09i8us0nte3xrkprswl/Avenged_Sevenfold-Save_Me.mp3?rlkey=zw4yodxhur3maz8kf1re6b17a&st=h3ieojr1&raw=1",
+    "title": "Save Me",
+    "artist": "Avenged Sevenfold",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8eoa6J5gL5tu_vg8LZB9k2P0ex-cwfkyOmRC-aVQ1z01B9aysBfPizgStLh-EovYOhUmNMwlFLHF--lo_7SXf6VW0-YZiPUGbvyQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/ey484u584sx4kfy81bur6/Avenged_Sevenfold-Tonight_the_World_Dies.mp3?rlkey=oowisogzypp3oq0i9z4hek6jh&st=0f9cwi6i&raw=1",
+    "title": "Tonight the World Dies",
+    "artist": "Avenged Sevenfold",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8eoa6J5gL5tu_vg8LZB9k2P0ex-cwfkyOmRC-aVQ1z01B9aysBfPizgStLh-EovYOhUmNMwlFLHF--lo_7SXf6VW0-YZiPUGbvyQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/5b9w6k6buoy5sxiz5lka8/Avenged_Sevenfold-Victim.mp3?rlkey=mlzbiui88h6k65ltvvt1vzqua&st=74757pyi&raw=1",
+    "title": "Victim",
+    "artist": "Avenged Sevenfold",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8eoa6J5gL5tu_vg8LZB9k2P0ex-cwfkyOmRC-aVQ1z01B9aysBfPizgStLh-EovYOhUmNMwlFLHF--lo_7SXf6VW0-YZiPUGbvyQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/5glq0ujpfze16cm081ooz/Avenged_Sevenfold-Beast_And_The_Harlot.mp3?rlkey=8gj89ea29g6au6ofpv880ctao&st=ofzakmpp&raw=1",
+    "title": "Beast And The Harlot",
+    "artist": "Avenged Sevenfold",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8eoa6J5gL5tu_vg8LZB9k2P0ex-cwfkyOmRC-aVQ1z01B9aysBfPizgStLh-EovYOhUmNMwlFLHF--lo_7SXf6VW0-YZiPUGbvyQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/sldxc0nbvxvfhbo4g1asn/Avenged_Sevenfold-A_Little_Piece_of_Heaven.mp3?rlkey=4vjcdr3i53y4epsgavnqy7ahd&st=hltjr96i&raw=1",
+    "title": "A Little Piece of Heaven",
+    "artist": "Avenged Sevenfold",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8eoa6J5gL5tu_vg8LZB9k2P0ex-cwfkyOmRC-aVQ1z01B9aysBfPizgStLh-EovYOhUmNMwlFLHF--lo_7SXf6VW0-YZiPUGbvyQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/ujuo1otwsse1wdfk3tfhv/Avenged_Sevenfold-Afterlife.mp3?rlkey=tanik2bd75hs2ee4hljcp08he&st=8b5t2con&raw=1",
+    "title": "Afterlife",
+    "artist": "Avenged Sevenfold",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8eoa6J5gL5tu_vg8LZB9k2P0ex-cwfkyOmRC-aVQ1z01B9aysBfPizgStLh-EovYOhUmNMwlFLHF--lo_7SXf6VW0-YZiPUGbvyQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/q6nhhiu1rlkqkzezsf436/Avenged_Sevenfold-Almost_Easy_Jam_Along_Version_it.mp3?rlkey=zphh63uw9n03hflttl1ncdy1o&st=esion9c2&raw=1",
+    "title": "Almost Easy Jam Along Version it",
+    "artist": "Avenged Sevenfold",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8eoa6J5gL5tu_vg8LZB9k2P0ex-cwfkyOmRC-aVQ1z01B9aysBfPizgStLh-EovYOhUmNMwlFLHF--lo_7SXf6VW0-YZiPUGbvyQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/ofxupauy1clv503hcsuyh/Avenged_Sevenfold-Almost_Easy_Live_At_Warped_Tour.mp3?rlkey=hv6bii6vv9glcsekugf062jvw&st=26i9ap3w&raw=1",
+    "title": "Almost Easy Live At Warped Tour",
+    "artist": "Avenged Sevenfold",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8eoa6J5gL5tu_vg8LZB9k2P0ex-cwfkyOmRC-aVQ1z01B9aysBfPizgStLh-EovYOhUmNMwlFLHF--lo_7SXf6VW0-YZiPUGbvyQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/qjujmdhki4qmz6ve33x3w/Avenged_Sevenfold-Almost_Easy.mp3?rlkey=1s4eb1wo7ztyok9l9wvm6szhu&st=53sysda4&raw=1",
+    "title": "Almost Easy",
+    "artist": "Avenged Sevenfold",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8eoa6J5gL5tu_vg8LZB9k2P0ex-cwfkyOmRC-aVQ1z01B9aysBfPizgStLh-EovYOhUmNMwlFLHF--lo_7SXf6VW0-YZiPUGbvyQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/q99em3pw0jsl71i2e715j/Avenged_Sevenfold-Bat_Country_Live_At_Hammerstein_Ba.mp3?rlkey=lv9b2gio708jjastgllmex8mo&st=fgf8y5qr&raw=1",
+    "title": "Bat Country Live At Hammerstein Ba",
+    "artist": "Avenged Sevenfold",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8eoa6J5gL5tu_vg8LZB9k2P0ex-cwfkyOmRC-aVQ1z01B9aysBfPizgStLh-EovYOhUmNMwlFLHF--lo_7SXf6VW0-YZiPUGbvyQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/9bgut7r5e14p6wpwak9i0/Avenged_Sevenfold-Bat_Country.mp3?rlkey=jhxzmgev64qhtdy0h02f50mob&st=jnvauzmd&raw=1",
+    "title": "Bat Country",
+    "artist": "Avenged Sevenfold",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8eoa6J5gL5tu_vg8LZB9k2P0ex-cwfkyOmRC-aVQ1z01B9aysBfPizgStLh-EovYOhUmNMwlFLHF--lo_7SXf6VW0-YZiPUGbvyQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/5glq0ujpfze16cm081ooz/Avenged_Sevenfold-Beast_And_The_Harlot.mp3?rlkey=8gj89ea29g6au6ofpv880ctao&st=jk5n8utq&raw=1",
+    "title": "Beast And The Harlot",
+    "artist": "Avenged Sevenfold",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8eoa6J5gL5tu_vg8LZB9k2P0ex-cwfkyOmRC-aVQ1z01B9aysBfPizgStLh-EovYOhUmNMwlFLHF--lo_7SXf6VW0-YZiPUGbvyQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/l0gtqcg1b71jdptpacinn/Avenged_Sevenfold-Betrayed.mp3?rlkey=neitfh6tpygqugjjqgspq3081&st=1r94b9p9&raw=1",
+    "title": "Betrayed",
+    "artist": "Avenged Sevenfold",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8eoa6J5gL5tu_vg8LZB9k2P0ex-cwfkyOmRC-aVQ1z01B9aysBfPizgStLh-EovYOhUmNMwlFLHF--lo_7SXf6VW0-YZiPUGbvyQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/87sdy8fuoqsti33el1031/Avenged_Sevenfold-Blinded_in_Chains.mp3?rlkey=lcw76dkqxez18qzvkfrbvity4&st=1rmq6xmu&raw=1",
+    "title": "Blinded in Chains",
+    "artist": "Avenged Sevenfold",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8eoa6J5gL5tu_vg8LZB9k2P0ex-cwfkyOmRC-aVQ1z01B9aysBfPizgStLh-EovYOhUmNMwlFLHF--lo_7SXf6VW0-YZiPUGbvyQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/z7oq9p0d67xv85t8bl7pt/Avenged_Sevenfold-Brompton_Cocktail.mp3?rlkey=qbvfzb5obh3rubu6vr5gorqbi&st=gc5iippa&raw=1",
+    "title": "Brompton Cocktail",
+    "artist": "Avenged Sevenfold",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8eoa6J5gL5tu_vg8LZB9k2P0ex-cwfkyOmRC-aVQ1z01B9aysBfPizgStLh-EovYOhUmNMwlFLHF--lo_7SXf6VW0-YZiPUGbvyQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/uzvngv2qdtwxirq4bmscc/Avenged_Sevenfold-Burn_it_Down.mp3?rlkey=re4le5ymp65flg5x2ck2xgaty&st=bga5qb4c&raw=1",
+    "title": "Burn it Down",
+    "artist": "Avenged Sevenfold",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8eoa6J5gL5tu_vg8LZB9k2P0ex-cwfkyOmRC-aVQ1z01B9aysBfPizgStLh-EovYOhUmNMwlFLHF--lo_7SXf6VW0-YZiPUGbvyQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/kjjf0l6y6o152k14pcbin/Avenged_Sevenfold-Critical_Acclaim.mp3?rlkey=elj958v09cc81ppb7xnfivyxi&st=nx1u8jmz&raw=1",
+    "title": "Critical Acclaim",
+    "artist": "Avenged Sevenfold",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8eoa6J5gL5tu_vg8LZB9k2P0ex-cwfkyOmRC-aVQ1z01B9aysBfPizgStLh-EovYOhUmNMwlFLHF--lo_7SXf6VW0-YZiPUGbvyQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/dkc57yqneqg32jru4cjm8/Avenged_Sevenfold-Crossroads_MVI.mp3?rlkey=qh5gs5r2gzow7ynlmdzs31c43&st=9zyfowln&raw=1",
+    "title": "Crossroads MVI",
+    "artist": "Avenged Sevenfold",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8eoa6J5gL5tu_vg8LZB9k2P0ex-cwfkyOmRC-aVQ1z01B9aysBfPizgStLh-EovYOhUmNMwlFLHF--lo_7SXf6VW0-YZiPUGbvyQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/z9ipz5rsdaplka8e1m395/Avenged_Sevenfold-Dear_God.mp3?rlkey=y19div60auc74560k88bq666h&st=vhisjr3a&raw=1",
+    "title": "Dear God",
+    "artist": "Avenged Sevenfold",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8eoa6J5gL5tu_vg8LZB9k2P0ex-cwfkyOmRC-aVQ1z01B9aysBfPizgStLh-EovYOhUmNMwlFLHF--lo_7SXf6VW0-YZiPUGbvyQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/mks0hjanwqc8d1cn4xbjy/Avenged_Sevenfold-Gunslinger.mp3?rlkey=ryx7xd8krkgn3xcmenaubracc&st=slcj2eir&raw=1",
+    "title": "Gunslinger",
+    "artist": "Avenged Sevenfold",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8eoa6J5gL5tu_vg8LZB9k2P0ex-cwfkyOmRC-aVQ1z01B9aysBfPizgStLh-EovYOhUmNMwlFLHF--lo_7SXf6VW0-YZiPUGbvyQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/hkg133zejawa2k5yypv5n/Avenged_Sevenfold-Lost.mp3?rlkey=if6dfo9lm12f4y4a5q1q1eb0f&st=9p7rkxwp&raw=1",
+    "title": "Lost",
+    "artist": "Avenged Sevenfold",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8eoa6J5gL5tu_vg8LZB9k2P0ex-cwfkyOmRC-aVQ1z01B9aysBfPizgStLh-EovYOhUmNMwlFLHF--lo_7SXf6VW0-YZiPUGbvyQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/5v3x5nsfqjo71vx5tkw8h/Avenged_Sevenfold-M_I_A.mp3?rlkey=qzkd00kkblpzbm24rkeko5div&st=x3uook7u&raw=1",
+    "title": "M I A",
+    "artist": "Avenged Sevenfold",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8eoa6J5gL5tu_vg8LZB9k2P0ex-cwfkyOmRC-aVQ1z01B9aysBfPizgStLh-EovYOhUmNMwlFLHF--lo_7SXf6VW0-YZiPUGbvyQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/12j7jykr0qgdnekoo3t0v/Avenged_Sevenfold-Scream.mp3?rlkey=5alvg35ec7wgxcri8p18wiwmc&st=t1yz5vht&raw=1",
+    "title": "Scream",
+    "artist": "Avenged Sevenfold",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8eoa6J5gL5tu_vg8LZB9k2P0ex-cwfkyOmRC-aVQ1z01B9aysBfPizgStLh-EovYOhUmNMwlFLHF--lo_7SXf6VW0-YZiPUGbvyQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/7lhrx076jhndn29k0hgla/Avenged_Sevenfold-Seize_The_Day.mp3?rlkey=aj563vqgrem4we82fyuv0z2xu&st=how4v2qc&raw=1",
+    "title": "Seize The Day",
+    "artist": "Avenged Sevenfold",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8eoa6J5gL5tu_vg8LZB9k2P0ex-cwfkyOmRC-aVQ1z01B9aysBfPizgStLh-EovYOhUmNMwlFLHF--lo_7SXf6VW0-YZiPUGbvyQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/fhcrxojbb4obh6kv2aajw/Avenged_Sevenfold-Sidewinder.mp3?rlkey=0l9d2j8ahj8p7twgpn4dy66q4&st=ne0qm4xr&raw=1",
+    "title": "Sidewinder",
+    "artist": "Avenged Sevenfold",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8eoa6J5gL5tu_vg8LZB9k2P0ex-cwfkyOmRC-aVQ1z01B9aysBfPizgStLh-EovYOhUmNMwlFLHF--lo_7SXf6VW0-YZiPUGbvyQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/mjserkrs68jtdywnglyri/Avenged_Sevenfold-Strength_of_The_World.mp3?rlkey=1qrukt72o25tjh6m0w471qv3v&st=96lrluv7&raw=1",
+    "title": "Strength of The World",
+    "artist": "Avenged Sevenfold",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8eoa6J5gL5tu_vg8LZB9k2P0ex-cwfkyOmRC-aVQ1z01B9aysBfPizgStLh-EovYOhUmNMwlFLHF--lo_7SXf6VW0-YZiPUGbvyQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/e3rwc0xwj4v1qkexmjrfm/Avenged_Sevenfold-The_Wicked_End.mp3?rlkey=u73owpjymti3u4mrztlqo4a1e&st=tcqhlx5q&raw=1",
+    "title": "The Wicked End",
+    "artist": "Avenged Sevenfold",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8eoa6J5gL5tu_vg8LZB9k2P0ex-cwfkyOmRC-aVQ1z01B9aysBfPizgStLh-EovYOhUmNMwlFLHF--lo_7SXf6VW0-YZiPUGbvyQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/ifhs0qlzsshxgbne04qly/Avenged_Sevenfold-Trashed_and_Scattered.mp3?rlkey=7w02gkclktp7x7qu0t3q1c9dr&st=8rw5pzxk&raw=1",
+    "title": "Trashed and Scattered",
+    "artist": "Avenged Sevenfold",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8eoa6J5gL5tu_vg8LZB9k2P0ex-cwfkyOmRC-aVQ1z01B9aysBfPizgStLh-EovYOhUmNMwlFLHF--lo_7SXf6VW0-YZiPUGbvyQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/wp49qfo6j74lp2bqcaobj/Avenged_Sevenfold-Unbound_the_Wild_Ride.mp3?rlkey=kt2petkoy8zk76zeis3qzs0zf&st=45xvhain&raw=1",
+    "title": "Unbound the Wild Ride",
+    "artist": "Avenged Sevenfold",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW8eoa6J5gL5tu_vg8LZB9k2P0ex-cwfkyOmRC-aVQ1z01B9aysBfPizgStLh-EovYOhUmNMwlFLHF--lo_7SXf6VW0-YZiPUGbvyQXg&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/kchkokbjfq8pl49hltx26/Noxa-Ajeng.mp3?rlkey=bqc1i5kb9g9yi5moepab15yg3&st=vw6jg17b&raw=1",
+    "title": "Ajeng",
+    "artist": "Noxa",
+    "img": "https://i.scdn.co/image/ab67616d0000b273f70bbfb1f11ec38bf14cbf02"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/cadpz5tybd2nsfko09c6f/Noxa-Blind_Faith.mp3?rlkey=t03d3bfnyzlwk5ndvw3ikqqvw&st=6md711yr&raw=1",
+    "title": "Blind Faith",
+    "artist": "Noxa",
+    "img": "https://i.scdn.co/image/ab67616d0000b273f70bbfb1f11ec38bf14cbf02"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/9mdn7mw7q4s2z9pytf1n4/Noxa-Buka_Mata.mp3?rlkey=3cxljqeishqbhrzvhmgtyy7x9&st=cgsp5b49&raw=1",
+    "title": "Buka Mata",
+    "artist": "Noxa",
+    "img": "https://i.scdn.co/image/ab67616d0000b273f70bbfb1f11ec38bf14cbf02"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/bdofkbeyspmjfqwn51505/Noxa-Close_Minded.mp3?rlkey=0fshfhca9o42r78fh55t3rvg4&st=kr1t2s26&raw=1",
+    "title": "Close Minded",
+    "artist": "Noxa",
+    "img": "https://i.scdn.co/image/ab67616d0000b273f70bbfb1f11ec38bf14cbf02"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/1lpiautik4wxjsr5lsu4w/Noxa-Grind_Viruses.mp3?rlkey=ida5z0wegiy1kqgfllusfmnes&st=ovk6ybyt&raw=1",
+    "title": "Grind Viruses",
+    "artist": "Noxa",
+    "img": "https://i.scdn.co/image/ab67616d0000b273f70bbfb1f11ec38bf14cbf02"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/1v3s72csk9piy10d5on5q/Noxa-Let-s_Go.mp3?rlkey=cby6yagt3bq9rqlzyuy543urp&st=zmonhx2l&raw=1",
+    "title": "Let-s Go",
+    "artist": "Noxa",
+    "img": "https://i.scdn.co/image/ab67616d0000b273f70bbfb1f11ec38bf14cbf02"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/c7it2ugzfpjz6tlq4v9hg/Noxa-Negri_Kaya.mp3?rlkey=wn8k63cwfzp3ln8o50ufsaosw&st=9ka0045q&raw=1",
+    "title": "Negri Kaya",
+    "artist": "Noxa",
+    "img": "https://i.scdn.co/image/ab67616d0000b273f70bbfb1f11ec38bf14cbf02"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/9cy5hlc05g69cxfc8qoej/Noxa-PROPAGANDA.mp3?rlkey=73l7sxbojtmki9z2byvwlqv2d&st=trj9g89y&raw=1",
+    "title": "PROPAGANDA",
+    "artist": "Noxa",
+    "img": "https://i.scdn.co/image/ab67616d0000b273f70bbfb1f11ec38bf14cbf02"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/cgbzx9udozwnd71ypbtql/Noxa-Shitty_People.mp3?rlkey=n5reugj1i1y2lkwb1m58nwsq4&st=uv5d9y33&raw=1",
+    "title": "Shitty People",
+    "artist": "Noxa",
+    "img": "https://i.scdn.co/image/ab67616d0000b273f70bbfb1f11ec38bf14cbf02"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/ue1687z0fu8cszjheips0/Noxa-Slave_Sucks.mp3?rlkey=9y2uy48janp2ch8bbjatklkhs&st=omkjxu5o&raw=1",
+    "title": "Slave Sucks",
+    "artist": "Noxa",
+    "img": "https://i.scdn.co/image/ab67616d0000b273f70bbfb1f11ec38bf14cbf02"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/yevuu4iid65gh0gx755ba/Noxa-The_Almighty.mp3?rlkey=jytg58i7bktcmtl8qzkube444&st=nmazc6wx&raw=1",
+    "title": "The Almighty",
+    "artist": "Noxa",
+    "img": "https://i.scdn.co/image/ab67616d0000b273f70bbfb1f11ec38bf14cbf02"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/rwjtyy93umwsqzer271uq/Down_For_Life-Apokaliptika.mp3?rlkey=8bmvcyxsapasxtk7kytex4dgn&st=rbxlv8pb&raw=1",
+    "title": "Apokaliptika",
+    "artist": "Down For Life",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdYc9qhvt_tudGM-xNuI093pg3rX945CnHdqJp23fcBQ7D2vF4N5E9VQiZ&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/2saipe2xjjv4zlaselwws/Down_For_Life-Mantra_Bentala.mp3?rlkey=xit5itbgkt6zck06ikchr00ry&st=4i96s63c&raw=1",
+    "title": "Mantra Bentala",
+    "artist": "Down For Life",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdYc9qhvt_tudGM-xNuI093pg3rX945CnHdqJp23fcBQ7D2vF4N5E9VQiZ&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/f25262zwewl00g26rn8vl/Down_For_Life-Prahara_Jenggala.mp3?rlkey=akg06fz6jtykmlyvahaoybxzn&st=dslpchv8&raw=1",
+    "title": "Prahara Jenggala",
+    "artist": "Down For Life",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdYc9qhvt_tudGM-xNuI093pg3rX945CnHdqJp23fcBQ7D2vF4N5E9VQiZ&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/ow1zmn65eaamjqgek41xr/Down_For_Life-Sangkakala_I.mp3?rlkey=1ej9b7otx1yf3pe7uezpn7q3b&st=hbcvo7gy&raw=1",
+    "title": "Sangkakala I",
+    "artist": "Down For Life",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdYc9qhvt_tudGM-xNuI093pg3rX945CnHdqJp23fcBQ7D2vF4N5E9VQiZ&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/geyldhdjz3uou25i98o2g/Down_For_Life-Children_of_Eden.mp3?rlkey=iw8fs5r80mpw7mcno2202bzi4&st=wgpbak5q&raw=1",
+    "title": "Children of Eden",
+    "artist": "Down For Life",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdYc9qhvt_tudGM-xNuI093pg3rX945CnHdqJp23fcBQ7D2vF4N5E9VQiZ&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/9l6ah7n7nc7q23i58v010/Down_For_Life-KALATIDHA.mp3?rlkey=ade2ggio62riykufhq1m1iqcl&st=0qeq5sh9&raw=1",
+    "title": "KALATIDHA",
+    "artist": "Down For Life",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdYc9qhvt_tudGM-xNuI093pg3rX945CnHdqJp23fcBQ7D2vF4N5E9VQiZ&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/zwyop8o0v7v53y5jmhlb8/Down_For_Life-Liturgi_Penyesatan.mp3?rlkey=exenoq30dtws0jh7umn8c02b7&st=fv23abrt&raw=1",
+    "title": "Liturgi Penyesatan",
+    "artist": "Down For Life",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdYc9qhvt_tudGM-xNuI093pg3rX945CnHdqJp23fcBQ7D2vF4N5E9VQiZ&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/sse26l9hu4r3u5xd8esga/Down_For_Life-Menuju_Matahari.mp3?rlkey=bi2aw9kpxxttvdnt2e9tbg49l&st=jule3dzg&raw=1",
+    "title": "Menuju Matahari",
+    "artist": "Down For Life",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdYc9qhvt_tudGM-xNuI093pg3rX945CnHdqJp23fcBQ7D2vF4N5E9VQiZ&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/9atgxo5lu3aryfmaol3ij/Down_For_Life-Pasukan_Babi_Neraka.mp3?rlkey=g4e6dlc8tlv3mlq0xhay9awcr&st=r7narmb8&raw=1",
+    "title": "Pasukan Babi Neraka",
+    "artist": "Down For Life",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdYc9qhvt_tudGM-xNuI093pg3rX945CnHdqJp23fcBQ7D2vF4N5E9VQiZ&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/qleu2y2hnvv0ir05jxrtp/Down_For_Life-Pesta_Partai_Barbar.mp3?rlkey=mcmkdhwtuzp6xa0jphtpbozq8&st=0s0tewdg&raw=1",
+    "title": "Pesta Partai Barbar",
+    "artist": "Down For Life",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdYc9qhvt_tudGM-xNuI093pg3rX945CnHdqJp23fcBQ7D2vF4N5E9VQiZ&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/uw201kciu74kpfneiuknz/Down_For_Life-Prosa_Kesetaraan.mp3?rlkey=0ewej3hhgwxpqkoeglqkz7xlb&st=gkx0wkky&raw=1",
+    "title": "Prosa Kesetaraan",
+    "artist": "Down For Life",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdYc9qhvt_tudGM-xNuI093pg3rX945CnHdqJp23fcBQ7D2vF4N5E9VQiZ&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/mkt2wdome03sdsd12n54y/Down_For_Life-SAMBERNYAWA.mp3?rlkey=cq5yb7v2ewq4bpha7t0ezah1u&st=7dpbp6uo&raw=1",
+    "title": "SAMBERNYAWA",
+    "artist": "Down For Life",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdYc9qhvt_tudGM-xNuI093pg3rX945CnHdqJp23fcBQ7D2vF4N5E9VQiZ&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/xpazoe9sy1d4xpmt55a4c/Down_For_Life-Sangkakala_II.mp3?rlkey=0nkanjboxlqxy5ajf256sc52h&st=hfdnp4ru&raw=1",
+    "title": "Sangkakala II",
+    "artist": "Down For Life",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdYc9qhvt_tudGM-xNuI093pg3rX945CnHdqJp23fcBQ7D2vF4N5E9VQiZ&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/nzjgqbx7qgetat4kyelho/Down_For_Life-Tertikam_Dari_Belakang.mp3?rlkey=hg2n8q9scwx8igiei4cgf7oq1&st=uly9g8l4&raw=1",
+    "title": "Tertikam Dari Belakang",
+    "artist": "Down For Life",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdYc9qhvt_tudGM-xNuI093pg3rX945CnHdqJp23fcBQ7D2vF4N5E9VQiZ&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/02e3c1iodjq90kb198h1n/Down_For_Life-THE_BETRAYAL.mp3?rlkey=4hsbe17ofrww6l8wmvtllvrbu&st=1w2msf4t&raw=1",
+    "title": "THE BETRAYAL",
+    "artist": "Down For Life",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdYc9qhvt_tudGM-xNuI093pg3rX945CnHdqJp23fcBQ7D2vF4N5E9VQiZ&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/l2rf9f20vnitix0gh55wb/DeadSquad-Bangsat_Kuasa.mp3?rlkey=polvbjm4xhd86ij7e5h92msfw&st=vmfuriwr&raw=1",
+    "title": "Bangsat Kuasa",
+    "artist": "DeadSquad",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRREijnbOzDIBBE7fiJ00N3vFP8190llovPX4ThCj72bNio2Fy6OW9L_k&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/glawu585d7kzbi7cx0mo7/DEADSQUAD-Blessphemy.mp3?rlkey=qv2cr725k4j50bbes616x0cpx&st=bn71o3i8&raw=1",
+    "title": "Blessphemy",
+    "artist": "DEADSQUAD",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRREijnbOzDIBBE7fiJ00N3vFP8190llovPX4ThCj72bNio2Fy6OW9L_k&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/7yq4y36my3448zmuu5oo5/DeadSquad-Curse_of_The_Black_Plague.mp3?rlkey=is2eyg7v2v2sf0vimuh9ryt8m&st=icsb8xhi&raw=1",
+    "title": "Curse of The Black Plague",
+    "artist": "DeadSquad",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRREijnbOzDIBBE7fiJ00N3vFP8190llovPX4ThCj72bNio2Fy6OW9L_k&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/4rocvwrnb4rx7tcjlywto/DeadSquad-Enigmatic_Pandemonium.mp3?rlkey=exc9jizk1fijbpp0vu1xam239&st=e178c84a&raw=1b8xhi&dl=0",
+    "title": "Enigmatic Pandemonium",
+    "artist": "DeadSquad",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRREijnbOzDIBBE7fiJ00N3vFP8190llovPX4ThCj72bNio2Fy6OW9L_k&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/g5zr4cc6ckj8fa0a364ic/DeadSquad-Lahir_Mata_Satir.mp3?rlkey=6k0tam0sherw93lldcyu0mubq&st=9t03yr6i&raw=1a&dl=0b8xhi&dl=0",
+    "title": "Lahir Mata Satir",
+    "artist": "DeadSquad",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRREijnbOzDIBBE7fiJ00N3vFP8190llovPX4ThCj72bNio2Fy6OW9L_k&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/iw0hnwk8algyedtjk5bv9/Deadsquad-Murder-feat_Eet_Sjahranieof_Edane.mp3?rlkey=hblgzwyicjwj7qabu83bdnulf&st=e23fzuf6&raw=10a&dl=0b8xhi&dl=0",
+    "title": "Murder-feat Eet Sjahranieof Edane",
+    "artist": "Deadsquad",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRREijnbOzDIBBE7fiJ00N3vFP8190llovPX4ThCj72bNio2Fy6OW9L_k&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/04ybu3vuy1lp2wlxxivuk/DeadSquad-Perangai_Nadir.mp3?rlkey=693sfrgpfhm6342lrju5cv80q&st=bvumjn6a&raw=1f&st=e23fzuf6&dl=00a&dl=0b8xhi&dl=0",
+    "title": "Perangai Nadir",
+    "artist": "DeadSquad",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRREijnbOzDIBBE7fiJ00N3vFP8190llovPX4ThCj72bNio2Fy6OW9L_k&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/gunmo878mcdmmp98urz3w/DeadSquad-Tyranation.mp3?rlkey=kg16vhi6zyjzfs36a3fw2aspi&st=yp79o126&raw=1&st=e23fzuf6&dl=00a&dl=0b8xhi&dl=0",
+    "title": "Tyranation",
+    "artist": "DeadSquad",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRREijnbOzDIBBE7fiJ00N3vFP8190llovPX4ThCj72bNio2Fy6OW9L_k&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/xylnq7rzyryjcamg9ywpn/DeadSquad-Altar_Eksistensi_Profan.mp3?rlkey=t4tjnodcn47os0kk004m9zekr&st=dg76v5at&raw=123fzuf6&dl=00a&dl=0b8xhi&dl=0",
+    "title": "Altar Eksistensi Profan",
+    "artist": "DeadSquad",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRREijnbOzDIBBE7fiJ00N3vFP8190llovPX4ThCj72bNio2Fy6OW9L_k&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/wrn6k1yluvn0us9vcp6jt/DeadSquad-Anatomi_Dosa.mp3?rlkey=xdlkedelhorybtyb7fztqojcg&st=4k12wyzq&raw=15at&dl=023fzuf6&dl=00a&dl=0b8xhi&dl=0",
+    "title": "Anatomi Dosa",
+    "artist": "DeadSquad",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRREijnbOzDIBBE7fiJ00N3vFP8190llovPX4ThCj72bNio2Fy6OW9L_k&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/todxlv6rkx6mcl1demfin/DeadSquad-Dimensi_Keterasingan.mp3?rlkey=b0b3117mxw6gq1sml2bh5kwdb&st=0s1hq3mk&raw=1&dl=023fzuf6&dl=00a&dl=0b8xhi&dl=0",
+    "title": "Dimensi Keterasingan",
+    "artist": "DeadSquad",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRREijnbOzDIBBE7fiJ00N3vFP8190llovPX4ThCj72bNio2Fy6OW9L_k&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/an2yj3cmwuqu1usq5syz8/DeadSquad-Dominasi_Belati.mp3?rlkey=exjde8lp103l6qnbnzfxvhs2c&st=h5m9olcl&raw=1&dl=0&dl=023fzuf6&dl=00a&dl=0b8xhi&dl=0",
+    "title": "Dominasi Belati",
+    "artist": "DeadSquad",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRREijnbOzDIBBE7fiJ00N3vFP8190llovPX4ThCj72bNio2Fy6OW9L_k&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/4gscyvhigfudpcnrneqw7/DeadSquad-Hiperbola_Dogma_Monoteis.mp3?rlkey=jvdn7xkfntwmjagbn9eqinzta&st=3th3qrtm&raw=1&dl=0&dl=023fzuf6&dl=00a&dl=0b8xhi&dl=0",
+    "title": "Hiperbola Dogma Monoteis",
+    "artist": "DeadSquad",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRREijnbOzDIBBE7fiJ00N3vFP8190llovPX4ThCj72bNio2Fy6OW9L_k&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/y5fiy8ctiqlf6lzc0t3i5/DeadSquad-Manufaktur_Replika_Baptis.mp3?rlkey=cqyzwak9f2p2z7aai6wx8rsbc&st=5ye6b6z6&raw=1qrtm&dl=0&dl=0&dl=023fzuf6&dl=00a&dl=0b8xhi&dl=0",
+    "title": "Manufaktur Replika Baptis",
+    "artist": "DeadSquad",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRREijnbOzDIBBE7fiJ00N3vFP8190llovPX4ThCj72bNio2Fy6OW9L_k&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/5rtq5ifsb74yieg38qc3a/DeadSquad-Menyangkal_Sangkakala.mp3?rlkey=cu4ncl7bfni8c7euui6cyywra&st=v2lr23tm&raw=10a&dl=0b8xhi&dl=0",
+    "title": "Menyangkal Sangkakala",
+    "artist": "DeadSquad",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRREijnbOzDIBBE7fiJ00N3vFP8190llovPX4ThCj72bNio2Fy6OW9L_k&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/z5ktxvx703l0i1xfzou27/DeadSquad-Ode_Kekekalan_Pusara.mp3?rlkey=8o8a3xesglitv8wxt4imd3ihh&st=1w5s8dw3&raw=1",
+    "title": "Ode Kekekalan Pusara",
+    "artist": "DeadSquad",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRREijnbOzDIBBE7fiJ00N3vFP8190llovPX4ThCj72bNio2Fy6OW9L_k&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/8n07w1j5q0n1m3uyznzsv/DeadSquad-Pasukan_Mati.mp3?rlkey=betf499q1rqve6ucz7llv97wb&st=8nfpdiay&raw=1",
+    "title": "Pasukan Mati",
+    "artist": "DeadSquad",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRREijnbOzDIBBE7fiJ00N3vFP8190llovPX4ThCj72bNio2Fy6OW9L_k&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/wj7smsl4bwmjiehwu7chr/DeadSquad-Patriot_Moral_Prematur.mp3?rlkey=xjfijxmw6ipdsnlfnf29kx8v2&st=5b5q74e7&raw=1",
+    "title": "Patriot Moral Prematur",
+    "artist": "DeadSquad",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRREijnbOzDIBBE7fiJ00N3vFP8190llovPX4ThCj72bNio2Fy6OW9L_k&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/re6nm92sidak6nwpr8dca/DeadSquad-Sermon_of_Deception.mp3?rlkey=hgpq8dkx0xla61g5fpzrj7fin&st=kolhh6hj&raw=1",
+    "title": "Sermon of Deception",
+    "artist": "DeadSquad",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRREijnbOzDIBBE7fiJ00N3vFP8190llovPX4ThCj72bNio2Fy6OW9L_k&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/b12q82dbj5h4dv74bogxj/Avenged_Sevenfold-Warmness_On_The_Soul.mp3?rlkey=0cbk2tt3y32xq4zaym1y8oy2g&st=5n2ckxqa&raw=1",
+    "title": "Warmness On The Soul",
+    "artist": "Avenged Sevenfold",
+    "img": "https://static.wikia.nocookie.net/lessthanjake/images/1/12/Avenged_Sevenfold.jpg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/rvbfevs22tvdluzs4kmbt/The_Black_Dahlia_Murder-Abysmal.mp3?rlkey=dgzin1fberl2cpxdtyv56qcaa&st=bggyfvvq&raw=1",
+    "title": "Abysmal",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpegYLXrnplTKh93hEr_4TDHf9vTuT1RJCzfk-UmgK_W/s320/Theblackdahliamurder-Abysmal.jpg.jpg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/hqjcbhbfqir7c61jgab13/The_Black_Dahlia_Murder-Asylum.mp3?rlkey=3mos4gkadetfv2nj3prxiajtj&st=qivng985&raw=1",
+    "title": "Asylum",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpegYLXrnplTKh93hEr_4TDHf9vTuT1RJCzfk-UmgK_W/s320/Theblackdahliamurder-Abysmal.jpg.jpg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/gposxayy3nkotl2y7oukr/The_Black_Dahlia_Murder-Re_Faced.mp3?rlkey=vtjd8hof6e5qrraouqc70ugk7&st=osj1kr4s&raw=1",
+    "title": "Re Faced",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpegYLXrnplTKh93hEr_4TDHf9vTuT1RJCzfk-UmgK_W/s320/Theblackdahliamurder-Abysmal.jpg.jpg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/h915nn1hby9g5fvpexul1/The_Black_Dahlia_Murder-Receipt.mp3?rlkey=y1hnipsrouf7nol5y1e475e4x&st=vlpeyyv3&raw=1",
+    "title": "Receipt",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpegYLXrnplTKh93hEr_4TDHf9vTuT1RJCzfk-UmgK_W/s320/Theblackdahliamurder-Abysmal.jpg.jpg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/4ufkosy028ejwlv00m9e3/The_Black_Dahlia_Murder-Stygiophobic.mp3?rlkey=ysxz5wvwpgy3l1lazc8lg4aqx&st=2efhen06&raw=1",
+    "title": "Stygiophobic",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpegYLXrnplTKh93hEr_4TDHf9vTuT1RJCzfk-UmgK_W/s320/Theblackdahliamurder-Abysmal.jpg.jpg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/9iunzvlpta4uqsg1u526v/The_Black_Dahlia_Murder-That_Cannot_Die_Which_Eternally_Is_Dead.mp3?rlkey=cr7ob4ytral542ej0jlhe8gyu&st=1r17nc8j&raw=1",
+    "title": "That Cannot Die Which Eternally Is Dead",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpegYLXrnplTKh93hEr_4TDHf9vTuT1RJCzfk-UmgK_W/s320/Theblackdahliamurder-Abysmal.jpg.jpg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/kw528tmrqm0nn6ncddtu5/The_Black_Dahlia_Murder-The_Advent.mp3?rlkey=boq49j7nwohjh8x6z08ob5rxt&st=ddobrw7h&raw=1",
+    "title": "The Advent",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpegYLXrnplTKh93hEr_4TDHf9vTuT1RJCzfk-UmgK_W/s320/Theblackdahliamurder-Abysmal.jpg.jpg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/ych4p3zkkbmpx9unlcnwf/The_Black_Dahlia_Murder-The_Fog.mp3?rlkey=ydjcrllpxz3nbau8drvtp8ezm&st=451b7pnp&raw=1",
+    "title": "The Fog",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpegYLXrnplTKh93hEr_4TDHf9vTuT1RJCzfk-UmgK_W/s320/Theblackdahliamurder-Abysmal.jpg.jpg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/2tdcw6izb4qgyd029wwy7/The_Black_Dahlia_Murder-Threat_Level_No_3.mp3?rlkey=1x7j68786g8uk4wdrtjl8jbc1&st=dd3gd3tg&raw=1",
+    "title": "Threat Level No 3",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpegYLXrnplTKh93hEr_4TDHf9vTuT1RJCzfk-UmgK_W/s320/Theblackdahliamurder-Abysmal.jpg.jpg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/hpyboeqhc4qw60nnlg2ma/The_Black_Dahlia_Murder-Vlad-_Son_of_the_Dragon.mp3?rlkey=9d1kkzzb8ndmbvtmiqbhrgqrl&st=je18mz98&raw=1",
+    "title": "Vlad- Son of the Dragon",
+    "artist": "The Black Dahlia Murder",
+    "img": "https://cdn.prod.website-files.com/68b755d7b21daac24102396b/695ec377445fbd2b3c5d07d8_TBDM_20220702_0008_highres-wide.jpegYLXrnplTKh93hEr_4TDHf9vTuT1RJCzfk-UmgK_W/s320/Theblackdahliamurder-Abysmal.jpg.jpg"
+  },
+{
+    "src": "https://dl.dropboxusercontent.com/scl/fi/osi589i7sll4zjukxr22p/Burgerkill-Darah-Hitam-Kebencian.mp3?rlkey=6j1onzfplc147rlz85vedkcm5&st=j1ue67nt&raw=1",
+    "title": "Darah Hitam Kebencian",
+    "artist": "Burgerkill",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr8bBlh9vMLjz5HSWVlepWs4HMp_cjg8IwVwaAOeA49QDy7sJPbJ556E_N&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/na4uslpm4z8ig0x8pv32z/Burgerkill-ResilientBlood.mp3?rlkey=m6hkpwaw9majsnm3kt5r0729g&st=ad8opato&raw=1",
+    "title": "Resilient Blood",
+    "artist": "Burgerkill",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr8bBlh9vMLjz5HSWVlepWs4HMp_cjg8IwVwaAOeA49QDy7sJPbJ556E_N&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/0vmighnf37dbtlquyk6dx/Burgerkill-Air-Mata-Api-Iwan-Fals-Cover.mp3?rlkey=fz6txyrngte1gksd0r6p7bjep&st=5qj3dnsy&raw=1",
+    "title": "Air Mata Api Iwan Fals Cover",
+    "artist": "Burgerkill",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr8bBlh9vMLjz5HSWVlepWs4HMp_cjg8IwVwaAOeA49QDy7sJPbJ556E_N&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/0869essni3b9s5cn6yxgt/Burgerkill-Shadow-Of-Sorrow.mp3?rlkey=hafmfaxa7chxi6b9uxvnspxm1&st=yibnl1xw&raw=1",
+    "title": "Shadow Of Sorrow",
+    "artist": "Burgerkill",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr8bBlh9vMLjz5HSWVlepWs4HMp_cjg8IwVwaAOeA49QDy7sJPbJ556E_N&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/7lm5tzwc4ls296oeqnrpo/Burgerkill-Integral.mp3?rlkey=w9k0b41hu2mrgjerpeuudk20v&st=85qqueic&raw=1",
+    "title": "Integral",
+    "artist": "Burgerkill",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr8bBlh9vMLjz5HSWVlepWs4HMp_cjg8IwVwaAOeA49QDy7sJPbJ556E_N&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/1z87dk3b2t8aptbq33sjg/BURGERKILLftFADLYPADI-TigaTitikHitam.mp3?rlkey=uz6hnq7emgdcq609aze7iby93&st=g48eubzv&raw=1",
+    "title": "Tiga Titik Hitam",
+    "artist": "BURGERKILL ft FADLY PADI",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr8bBlh9vMLjz5HSWVlepWs4HMp_cjg8IwVwaAOeA49QDy7sJPbJ556E_N&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/7nl5fwxhv4qjfiib2f2rj/BurgerkillFeatAhmadDhani-Elang.mp3?rlkey=lxkgl82l0100ju8vuxh4zgvl7&st=qg7fcucn&raw=1",
+    "title": "Elang",
+    "artist": "Burgerkill Feat Ahmad Dhani",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr8bBlh9vMLjz5HSWVlepWs4HMp_cjg8IwVwaAOeA49QDy7sJPbJ556E_N&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/krtc53ik1dfr60agp9an4/Burgerkill-RoarofChaos.mp3?rlkey=r9rgrlgbtjel262zbr7y20uwd&st=udsniyis&raw=1",
+    "title": "Roar of Chaos",
+    "artist": "Burgerkill",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr8bBlh9vMLjz5HSWVlepWs4HMp_cjg8IwVwaAOeA49QDy7sJPbJ556E_N&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/icnrw6nphes4usynz1y8k/Burgerkill-UnderTheScars.mp3?rlkey=7j7ht01wo30jzzfnn87wli3f1&st=njh7kq0r&raw=1",
+    "title": "Under The Scars",
+    "artist": "Burgerkill",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr8bBlh9vMLjz5HSWVlepWs4HMp_cjg8IwVwaAOeA49QDy7sJPbJ556E_N&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/7zkw691awl4il9hyajk2p/Burgerkill-Hollow.mp3?rlkey=pmobcw8fihc5m18vel3s1endg&st=pk8fihe1&raw=1",
+    "title": "Hollow",
+    "artist": "Burgerkill",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr8bBlh9vMLjz5HSWVlepWs4HMp_cjg8IwVwaAOeA49QDy7sJPbJ556E_N&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/ygg73kgue4yl36l7trax7/BurgerkillKillchestra-AnElegy.mp3?rlkey=dzb4sc8kydsckl2p2fbfh1ya5&st=tfdr09ay&raw=1",
+    "title": "An Elegy",
+    "artist": "Burgerkill Killchestra",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr8bBlh9vMLjz5HSWVlepWs4HMp_cjg8IwVwaAOeA49QDy7sJPbJ556E_N&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/hbo69tngiglt9fgug36x9/Burgerkill-Atur-Aku.mp3?rlkey=ypy86lzscy7wtnczv9geipm4p&st=cphlr3er&raw=1",
+    "title": "Atur Aku",
+    "artist": "Burgerkill",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr8bBlh9vMLjz5HSWVlepWs4HMp_cjg8IwVwaAOeA49QDy7sJPbJ556E_N&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/rped4hofc1fys406qvhl4/HiddenMessage-Teman-Sampai-Akhir.mp3?rlkey=cocvhjp80vkwt97vxxo29kts5&st=bqjuruur&raw=1",
+    "title": "Teman Sampai Akhir",
+    "artist": "Hidden Message",
+    "img": "https://dapurletter.id/wp-content/uploads/2026/02/Hidden-Message-Photo-Media-Kit-4_1.jpg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/30si9dl6dlbz84bpks65i/HiddenMessage-Masih-Ada-Kesempatan.mp3?rlkey=pffmu8gtoxhgbg9nauy617tu3&st=9b86lji4&raw=1",
+    "title": "Masih Ada Kesempatan",
+    "artist": "Hidden Message",
+    "img": "https://dapurletter.id/wp-content/uploads/2026/02/Hidden-Message-Photo-Media-Kit-4_1.jpg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/zlmmqca6p7vi2pjnur01k/HiddenMessage-Simpan-Masa-Lalu.mp3?rlkey=vx2k62scxtk36wj6yaa1mu3t6&st=q68lnvm0&raw=1",
+    "title": "Simpan Masa Lalu",
+    "artist": "Hidden Message",
+    "img": "https://dapurletter.id/wp-content/uploads/2026/02/Hidden-Message-Photo-Media-Kit-4_1.jpg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/6qxbsvumenqnb41o5vlr3/HiddenMessage-Home.mp3?rlkey=u8c6rkc1bkutebbpd1tgz1gcn&st=d11kb20t&raw=1",
+    "title": "Home",
+    "artist": "Hidden Message",
+    "img": "https://dapurletter.id/wp-content/uploads/2026/02/Hidden-Message-Photo-Media-Kit-4_1.jpg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/xqe3y3tv563nc9bey5qp2/HiddenMessage-Rasa-Ini-Takkan-Pernah-Mati.mp3?rlkey=58v9h08u6eps6sjhab0re5n2e&st=xm4ynjy9&raw=1",
+    "title": "Rasa Ini Takkan Pernah Mati",
+    "artist": "Hidden Message",
+    "img": "https://dapurletter.id/wp-content/uploads/2026/02/Hidden-Message-Photo-Media-Kit-4_1.jpg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/rz0tvpal8u7l7227jw8ul/HiddenMessage-When-the-World-Is-Not-Enough.mp3?rlkey=ewt6uhzsny51o5y1u4y1quowd&st=xf90k851&raw=1",
+    "title": "When the World Is Not Enough",
+    "artist": "Hidden Message",
+    "img": "https://dapurletter.id/wp-content/uploads/2026/02/Hidden-Message-Photo-Media-Kit-4_1.jpg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/kpu381hytyzt95flikld3/HiddenMessage-Awal-Yang-Baik.mp3?rlkey=3xvkmvglrz3oks7brkapz6874&st=tf4gt3m3&raw=1",
+    "title": "Awal Yang Baik",
+    "artist": "Hidden Message",
+    "img": "https://dapurletter.id/wp-content/uploads/2026/02/Hidden-Message-Photo-Media-Kit-4_1.jpg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/fk31gixf80hf6f4sfx2no/HiddenMessage-I-Will-Be.mp3?rlkey=vgs94wcfcfpd7b5nod1v2zejl&st=w8tlow2l&raw=1",
+    "title": "I Will Be",
+    "artist": "Hidden Message",
+    "img": "https://dapurletter.id/wp-content/uploads/2026/02/Hidden-Message-Photo-Media-Kit-4_1.jpg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/hb1nou5ezyehhc1we36oh/HiddenMessage-Pesta-Dansa.mp3?rlkey=yp8vheqvne2kp6pg9e3btwstp&st=hmmtnv14&raw=1",
+    "title": "Pesta Dansa",
+    "artist": "Hidden Message",
+    "img": "https://dapurletter.id/wp-content/uploads/2026/02/Hidden-Message-Photo-Media-Kit-4_1.jpg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/rw6w62dxg1vload18coa6/HiddenMessage-Saat-Ini-Atau-Nanti.mp3?rlkey=td9401fu6wgafifzcwhp6scnm&st=e99cosfr&raw=1",
+    "title": "Saat Ini Atau Nanti",
+    "artist": "Hidden Message",
+    "img": "https://dapurletter.id/wp-content/uploads/2026/02/Hidden-Message-Photo-Media-Kit-4_1.jpg"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/d19ztcan7uxkt69geebtd/Edane-Alam_Manusia.mp3?rlkey=v1v0x4iyrkhu77fh0xtn3791q&st=lexnvip9&raw=1",
+    "title": "Alam Manusia",
+    "artist": "Edane",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD_tFhTLhTRA7W20sr8v4AHbFCxfoWQh-bImrz2RfBjlFPBz9oaQINSH_x&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/x7mqmufpm2e1ro1li7iqd/EDANE-Bla_Bla_Bla.mp3?rlkey=jfx8dustuwly24vkg7xmpe0fw&st=chxoh4v7&raw=1",
+    "title": "Bla Bla Bla",
+    "artist": "EDANE",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD_tFhTLhTRA7W20sr8v4AHbFCxfoWQh-bImrz2RfBjlFPBz9oaQINSH_x&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/qpxd05gxfgyjilgpjbbbs/EDANE-Comin_Down.mp3?rlkey=wpap3j78gcspgtn8lzpg9sjnu&st=evpl90ut&raw=1",
+    "title": "Coming Down",
+    "artist": "EDANE",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD_tFhTLhTRA7W20sr8v4AHbFCxfoWQh-bImrz2RfBjlFPBz9oaQINSH_x&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/1wqpqcl9nmrukgqhzfyaq/EDANE-Cry_Out.mp3?rlkey=w7ypl48gu9c3pomaydt43jfbi&st=lx3tzvds&raw=1",
+    "title": "Cry Out",
+    "artist": "EDANE",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD_tFhTLhTRA7W20sr8v4AHbFCxfoWQh-bImrz2RfBjlFPBz9oaQINSH_x&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/kvmftzdgseqc33gt7obyv/Edane-Goblog.mp3?rlkey=rnb2r7czaov2gwt0c9s2znycd&st=aq5zjjx0&raw=1",
+    "title": "Goblog",
+    "artist": "Edane",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD_tFhTLhTRA7W20sr8v4AHbFCxfoWQh-bImrz2RfBjlFPBz9oaQINSH_x&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/edgxdb3er70tywr890eao/EDANE-HAIL_EDAN.mp3?rlkey=9a0jxenu2h128dtezzcv82rph&st=ckx7rgrt&raw=1",
+    "title": "HAIL EDAN",
+    "artist": "EDANE",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD_tFhTLhTRA7W20sr8v4AHbFCxfoWQh-bImrz2RfBjlFPBz9oaQINSH_x&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/96ojrlqwdd6tlb45kf1ri/Edane-Ikuti.mp3?rlkey=cfefbna16yfno0tywdhk1paqh&st=atb3hb28&raw=1",
+    "title": "Ikuti",
+    "artist": "Edane",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD_tFhTLhTRA7W20sr8v4AHbFCxfoWQh-bImrz2RfBjlFPBz9oaQINSH_x&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/4ygqg6er82s12r0ri1ld7/Edane-Ini_Aku.mp3?rlkey=4yef9co3k1h0earqie2c9k648&st=qfwg7h44&raw=1",
+    "title": "Ini Aku",
+    "artist": "Edane",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD_tFhTLhTRA7W20sr8v4AHbFCxfoWQh-bImrz2RfBjlFPBz9oaQINSH_x&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/t2tk4sjp1jsi7qa117fqt/Edane-Jadi_Beken.mp3?rlkey=mrxvlq4llpdsd8zn4l9nmayo4&st=cnr0c11t&raw=1",
+    "title": "Jadi Beken",
+    "artist": "Edane",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD_tFhTLhTRA7W20sr8v4AHbFCxfoWQh-bImrz2RfBjlFPBz9oaQINSH_x&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/whhd7qtzf6p9spvbj9084/EDANE-Kau_Ku_Genggam.mp3?rlkey=nmun3htkvelq8v4savribript&st=upvxly05&raw=1",
+    "title": "Kau Ku Genggam",
+    "artist": "EDANE",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD_tFhTLhTRA7W20sr8v4AHbFCxfoWQh-bImrz2RfBjlFPBz9oaQINSH_x&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/c8i6xy26nzkoyrf5hvr1b/EDANE-Kau_Pikir_Kaulah_Segalanya.mp3?rlkey=oqkjhusqv2mkia5dzgfy0g8kk&st=0s8378bt&raw=1",
+    "title": "Kau Pikir Kaulah Segalanya",
+    "artist": "EDANE",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD_tFhTLhTRA7W20sr8v4AHbFCxfoWQh-bImrz2RfBjlFPBz9oaQINSH_x&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/z601rg8u92f4o9q74rzzh/Edane-Kilat.mp3?rlkey=pbp7yxmkooul7fehtdj4eczbk&st=g9b0eqw4&raw=1",
+    "title": "Kilat",
+    "artist": "Edane",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD_tFhTLhTRA7W20sr8v4AHbFCxfoWQh-bImrz2RfBjlFPBz9oaQINSH_x&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/sgtip6n3ww7yhyyuxqvqp/Edane-Living_Dead.mp3?rlkey=tbyxbargxhy08wzf7o8hgus34&st=s332pej5&raw=1",
+    "title": "Living Dead",
+    "artist": "Edane",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD_tFhTLhTRA7W20sr8v4AHbFCxfoWQh-bImrz2RfBjlFPBz9oaQINSH_x&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/ndshc5bcfwb7gvybqro7g/Edane-Masihkah_Ada_Senyum.mp3?rlkey=6f1ju1fu86ok9jtw93ydev7og&st=i2sg2jgh&raw=1",
+    "title": "Masihkah Ada Senyum",
+    "artist": "Edane",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD_tFhTLhTRA7W20sr8v4AHbFCxfoWQh-bImrz2RfBjlFPBz9oaQINSH_x&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/83owkrgpn3mgq0o868teq/EDANE-Pancaroba.mp3?rlkey=n6wahdfxtk4i17t2ikbqwz75q&st=gwc1nj13&raw=1",
+    "title": "Pancaroba",
+    "artist": "EDANE",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD_tFhTLhTRA7W20sr8v4AHbFCxfoWQh-bImrz2RfBjlFPBz9oaQINSH_x&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/3bpl2izi0lh05pk5363oj/EDANE-Rock_In_82.mp3?rlkey=hkqbqlr1z4n9852p4abryqr0d&st=2w0sqx4a&raw=1",
+    "title": "Rock In 82",
+    "artist": "EDANE",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD_tFhTLhTRA7W20sr8v4AHbFCxfoWQh-bImrz2RfBjlFPBz9oaQINSH_x&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/rps0u1no8yzintfwk3n7r/Edane-Takkan_Menghilang.mp3?rlkey=geixt5bq01zlbg665tpp8azcj&st=92kulf67&raw=1",
+    "title": "Takkan Menghilang",
+    "artist": "Edane",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD_tFhTLhTRA7W20sr8v4AHbFCxfoWQh-bImrz2RfBjlFPBz9oaQINSH_x&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/ye61xr7wfkxlhilmvzfhs/Edane-Time_To_Rock.mp3?rlkey=ce7bmgcgvm4zli2gpr96d8ddj&st=799ao4i1&raw=1",
+    "title": "Time To Rock",
+    "artist": "Edane",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD_tFhTLhTRA7W20sr8v4AHbFCxfoWQh-bImrz2RfBjlFPBz9oaQINSH_x&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/y51cgz291wzqzy9xz3u0e/Edane-Jadi_Beken.mp3?rlkey=q29d4o6b3z0ukkqqzoagg1jb3&st=20aph2jh&raw=1",
+    "title": "Jadi Beken",
+    "artist": "Edane",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD_tFhTLhTRA7W20sr8v4AHbFCxfoWQh-bImrz2RfBjlFPBz9oaQINSH_x&s=10"
+  },
+  {
+    "src": "https://dl.dropboxusercontent.com/scl/fi/99m3dnp7o39kufomu5sys/Edane-Liarkan_Rasa.mp3?rlkey=31it6pz8zdo3wwptxiqoyhqrl&st=8ffpnh45&raw=1",
+    "title": "Liarkan Rasa",
+    "artist": "Edane",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD_tFhTLhTRA7W20sr8v4AHbFCxfoWQh-bImrz2RfBjlFPBz9oaQINSH_x&s=10"
   }
 ]
