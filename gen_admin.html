@@ -10,62 +10,58 @@
         label { display: block; margin-bottom: 5px; color: #c00000; font-weight: bold;}
         input[type="text"] { width: 100%; padding: 10px; background: #222; border: 1px solid #444; color: #fff; box-sizing: border-box; border-radius: 4px;}
         input[type="text"]:focus { border-color: #c00000; outline: none; }
-        .btn-group { margin-top: 15px; }
         button { background: #c00000; color: #fff; border: none; padding: 10px 15px; cursor: pointer; font-weight: bold; margin-right: 10px; border-radius: 4px;}
-        button:hover { background: #e60000; }
         button.reset { background: #444; }
-        button.reset:hover { background: #555; }
         textarea { width: 100%; height: 120px; background: #1a1a1a; color: #00ff00; font-family: monospace; padding: 10px; margin-top: 20px; box-sizing: border-box; border: 1px solid #333; border-radius: 4px; resize: none;}
         .hint { font-size: 11px; color: #666; margin-top: 4px; }
     </style>
 </head>
 <body>
 
-    <h2>ASHMETAL666 SMART ENTRY GENERATOR</h2>
+    <h2>ASHMETAL666 AUTO ENTRY GENERATOR</h2>
     <hr style="border: 1px solid #c00000;">
     <br>
 
     <div class="form-group">
         <label>1. URL MP3 Dropbox</label>
         <input type="text" id="src" placeholder="https://dl.dropboxusercontent.com/..." oninput="autoExtractData()">
-        <div class="hint">Tempel link Dropbox di sini untuk mengisi kolom di bawah secara otomatis.</div>
+        <div class="hint">Tempel link Dropbox, data di bawah langsung terisi otomatis.</div>
     </div>
     <div class="form-group">
-        <label>Nama Band / Artist</label>
-        <input type="text" id="artist" placeholder="Terisi otomatis atau ketik manual...">
+        <label>Nama Band</label>
+        <input type="text" id="artist" placeholder="Terisi otomatis...">
     </div>
     <div class="form-group">
         <label>Judul Lagu</label>
-        <input type="text" id="title" placeholder="Terisi otomatis atau ketik manual...">
+        <input type="text" id="title" placeholder="Terisi otomatis...">
+    </div>
+    <div class="form-group">
+        <label>URL Thumbnail Gambar (Otomatis Pola Zonalagu)</label>
+        <input type="text" id="img" placeholder="Terisi otomatis...">
     </div>
 
-    <div class="btn-group">
+    <div style="margin-top:15px;">
         <button onclick="generateJSON()">Generate JSON</button>
         <button class="reset" onclick="resetForm()">Reset Form</button>
     </div>
 
-    <textarea id="output" readonly placeholder="Hasil format JSON akan muncul di sini..."></textarea>
+    <textarea id="output" readonly placeholder="Hasil format JSON..."></textarea>
     <br><br>
     <button onclick="copyJSON()" style="background:#0088cc; width: 100%;">Copy JSON</button>
 
     <script>
-        // Fungsi Pintar: Ekstrak otomatis nama band & judul dari nama file Dropbox
         function autoExtractData() {
             let srcInput = document.getElementById('src').value.trim();
             if (!srcInput) return;
 
             try {
-                // Ambil teks nama file sebelum parameter tanda tanya (?)
                 const urlClean = srcInput.split('?')[0];
                 const fileNameWithExt = urlClean.substring(urlClean.lastIndexOf('/') + 1);
-                
-                // Decode spasi dan hilangkan ekstensi .mp3
                 let fileName = decodeURIComponent(fileNameWithExt.replace(/\+/g, ' ')).replace(/\.mp3$/i, '');
 
                 let artist = "";
                 let title = "";
 
-                // Pecah teks jika menggunakan pemisah '-' atau '_'
                 if (fileName.includes('-')) {
                     const parts = fileName.split('-');
                     artist = parts[0].trim();
@@ -78,11 +74,17 @@
                     title = fileName;
                 }
 
-                // Bersihkan karakter underscore menjadi spasi normal
-                document.getElementById('artist').value = artist.replace(/_/g, ' ');
-                document.getElementById('title').value = title.replace(/_/g, ' ');
+                artist = artist.replace(/_/g, ' ');
+                title = title.replace(/_/g, ' ');
+
+                document.getElementById('artist').value = artist;
+                document.getElementById('title').value = title;
+
+                // BUAT LINK GAMBAR OTOMATIS BERDASARKAN JUDUL LAGU (pola lami kamu)
+                const imgFormat = title.replace(/\s+/g, '_');
+                document.getElementById('img').value = `http://zonalagu.jw.lt/img/${imgFormat}.jpg`;
             } catch (e) {
-                console.error("Gagal memilah nama file otomatis", e);
+                console.error(e);
             }
         }
 
@@ -90,13 +92,13 @@
             let src = document.getElementById('src').value.trim();
             const title = document.getElementById('title').value.trim();
             const artist = document.getElementById('artist').value.trim();
+            const img = document.getElementById('img').value.trim();
 
-            if(!src || !title || !artist) {
-                alert('Semua bidang input wajib diisi!');
+            if(!src || !title || !artist || !img) {
+                alert('Semua bidang wajib diisi!');
                 return;
             }
 
-            // Memastikan URL Dropbox menggunakan parameter ?raw=1 agar streaming/download langsung bekerja
             if (src.includes('?')) {
                 src = src.replace(/dl=0|dl=1/g, 'raw=1');
                 if (!src.includes('raw=1')) src += '&raw=1';
@@ -104,16 +106,15 @@
                 src += '?raw=1';
             }
 
-            // Struktur Baru: Tanpa objek "img" karena dibaca via biner MP3
-            const jsonObj = { src, title, artist };
-            const resultString = JSON.stringify(jsonObj, null, 2) + ",";
-            document.getElementById('output').value = resultString;
+            const jsonObj = { src, title, artist, img };
+            document.getElementById('output').value = JSON.stringify(jsonObj, null, 2) + ",";
         }
 
         function resetForm() {
             document.getElementById('src').value = '';
             document.getElementById('title').value = '';
             document.getElementById('artist').value = '';
+            document.getElementById('img').value = '';
             document.getElementById('output').value = '';
         }
 
