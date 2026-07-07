@@ -1,14 +1,19 @@
 /**
  * ASHMETAL666 - Core Website Script (Full Stable Version)
  * Berjalan murni menggunakan Vanilla JavaScript (No Framework, No Library)
- * Optimal untuk Vercel & XtGem
+ * Optimal untuk XtGem & Vercel
  */
 
 // Ambil path URL saat ini untuk routing halaman
 const currentPath = window.location.pathname;
 
-// Muat database JSON terlebih dahulu untuk seluruh halaman aktif
-window.onload = loadAllDatabases;
+// JALUR AMAN & CEPAT: Jika di halaman cek.html, langsung eksekusi countdown tanpa menunggu memuat database JSON
+if (currentPath.includes('cek.html')) {
+    document.addEventListener('DOMContentLoaded', handleDownloadCountdown);
+} else {
+    // Untuk halaman lain (index, play, sitemap), muat database JSON terlebih dahulu
+    window.onload = loadAllDatabases;
+}
 
 // Konfigurasi daftar file database JSON (Mendukung hingga 50.000+ lagu secara bertahap)
 const dbFiles = [
@@ -42,14 +47,14 @@ function initApp() {
     } else if (currentPath.includes('about.html') || currentPath.includes('request.html')) {
         // Halaman statis murni tidak membutuhkan fungsi tambahan
     } else {
-        // Default beranda (index.html / root /)
+        // Default beranda (index / /)
         setupSearch();
         renderSongs(allSongs, currentPage);
         setupPagination(allSongs);
     }
 }
 
-// Menampilkan daftar lagu ke DOM dengan sistem Lazy Loading Gambar (Halaman Index)
+// Menampilkan daftar lagu ke DOM dengan sistem Lazy Loading Gambar
 function renderSongs(songs, page) {
     const listContainer = document.getElementById('songList');
     if (!listContainer) return;
@@ -75,7 +80,7 @@ function renderSongs(songs, page) {
                 <div class="song-artist">${song.artist}</div>
                 <div class="song-actions">
                     <a href="play.html?data=${encodedParam}" class="btn btn-play">PLAY</a>
-                    <a href="${song.src}" class="btn btn-dl" download="${song.artist} - ${song.title}.mp3">DOWNLOAD</a>
+                    <a href="cek.html?data=${encodedParam}" class="btn btn-dl">DOWNLOAD</a>
                 </div>
             </div>
         `;
@@ -151,17 +156,12 @@ function renderPlayPage() {
         // Atur Judul Halaman dan Elemen HTML secara Dinamis
         document.title = `Download Lagu ${song.artist} - ${song.title} MP3 | ASHMETAL666`;
         document.getElementById('h1Title').textContent = `${song.artist} - ${song.title}`;
+        document.getElementById('songImg').src = song.img || "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3Crect width='100%25' height='100%25' fill='%23222'/%3E%3C/svg%3E";
+        document.getElementById('songImg').alt = `${song.artist} - ${song.title}`;
         document.getElementById('audioPlayer').src = song.src;
         
-        // Memuat gambar cover langsung dari database (Sangat Cepat & Stabil)
-        const targetImg = document.getElementById('songImg');
-        targetImg.src = song.img || "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3Crect width='100%25' height='100%25' fill='%23222'/%3E%3C/svg%3E";
-        targetImg.alt = `${song.artist} - ${song.title}`;
-        
-        // Tombol download langsung mengarah ke file asli Dropbox
-        const dlBtn = document.getElementById('btnDlDirect');
-        dlBtn.href = song.src;
-        dlBtn.setAttribute('download', `${song.artist} - ${song.title}.mp3`);
+        // Set link ke halaman cek download
+        document.getElementById('btnDlDirect').href = `cek.html?data=${encodeURIComponent(dataStr)}`;
         
         // Fitur Copy Link Share
         document.getElementById('btnCopyLink').onclick = () => {
@@ -169,7 +169,7 @@ function renderPlayPage() {
             alert('Link lagu berhasil disalin ke papan klip!');
         };
 
-        // Injeksi JSON-LD Schema untuk MusicRecording (Sangat disukai Google Bot SEO)
+        // Injeksi JSON-LD Schema untuk MusicRecording
         const schema = {
             "@context": "https://schema.org",
             "@type": "MusicRecording",
@@ -183,7 +183,7 @@ function renderPlayPage() {
         scriptSchema.text = JSON.stringify(schema);
         document.head.appendChild(scriptSchema);
 
-        // Menampilkan 10 Lagu Terkait Secara Acak di bawah pemutar
+        // Menampilkan 10 Lagu Terkait Secara Acak
         if (allSongs.length > 0) {
             const shuffled = [...allSongs].sort(() => 0.5 - Math.random());
             const related = shuffled.filter(s => s.title !== song.title).slice(0, 10);
@@ -208,6 +208,35 @@ function renderPlayPage() {
         }
     } catch (e) {
         console.error("Gagal memproses data lagu di halaman play:", e);
+    }
+}
+
+// Sistem Hitung Mundur 5 Detik Halaman Download `cek.html`
+function handleDownloadCountdown() {
+    const params = new URLSearchParams(window.location.search);
+    const dataStr = params.get('data');
+    if (!dataStr) return;
+    
+    try {
+        const song = JSON.parse(decodeURIComponent(dataStr));
+        let count = 5;
+        const countEl = document.getElementById('countdown');
+        const fallbackEl = document.getElementById('fallbackZone');
+
+        if(fallbackEl) {
+            fallbackEl.innerHTML = `<a href="${song.src}" class="btn btn-play btn-large">Download Now</a>`;
+        }
+
+        const timer = setInterval(() => {
+            count--;
+            if (countEl) countEl.textContent = count;
+            if (count <= 0) {
+                clearInterval(timer);
+                window.location.href = song.src;
+            }
+        }, 1000);
+    } catch(e) {
+        console.error("Gagal mengeksekusi hitung mundur:", e);
     }
 }
 
@@ -241,7 +270,6 @@ function lazyLoadImages() {
         });
         images.forEach(img => obs.observe(img));
     } else {
-        // Fallback otomatis jika diakses via browser jadul
         images.forEach(img => img.src = img.getAttribute('data-src'));
     }
 }
