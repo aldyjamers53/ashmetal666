@@ -34,7 +34,7 @@
 
     <!-- Halaman Sitemap HTML Internal -->
     <url>
-        <loc>https://ashmetal666.vercel.app/sitemap.html</loc>
+        <loc>https://ashmetal666.vercel.app/sitemap.xml</loc>
         <lastmod>2026-07-07</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
