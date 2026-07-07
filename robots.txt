@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /gen_admin.xtml
+
+Sitemap: https://ashmetal666.vercel.app/sitemap.xml
