@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Halaman Utama (Index) -->
+    <url>
+        <loc>https://ashmetal666.vercel.app/</loc>
+        <lastmod>2026-07-07</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- Halaman Play / Stream -->
+    <url>
+        <loc>https://ashmetal666.vercel.app/play.html</loc>
+        <lastmod>2026-07-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Halaman Request Lagu -->
+    <url>
+        <loc>https://ashmetal666.vercel.app/request.html</loc>
+        <lastmod>2026-07-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <!-- Halaman About -->
+    <url>
+        <loc>https://ashmetal666.vercel.app/about.html</loc>
+        <lastmod>2026-07-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <!-- Halaman Sitemap HTML Internal -->
+    <url>
+        <loc>https://ashmetal666.vercel.app/sitemap.html</loc>
+        <lastmod>2026-07-07</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+</urlset>
