@@ -1,62 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ASHMETAL666 - JSON Admin Generator</title>
     <style>
-        body { background: #111; color: #fff; font-family: sans-serif; padding: 20px; }
+        body { background: #111; color: #fff; font-family: sans-serif; padding: 20px; max-width: 600px; margin: 0 auto; }
         .form-group { margin-bottom: 12px; }
         label { display: block; margin-bottom: 5px; color: #c00000; font-weight: bold;}
-        input[type="text"] { width: 100%; padding: 10px; background: #222; border: 1px solid #444; color: #fff; box-sizing: border-box;}
-        button { background: #c00000; color: #fff; border: none; padding: 10px 15px; cursor: pointer; font-weight: bold; margin-right: 10px;}
+        input[type="text"] { width: 100%; padding: 10px; background: #222; border: 1px solid #444; color: #fff; box-sizing: border-box; border-radius: 4px;}
+        input[type="text"]:focus { border-color: #c00000; outline: none; }
+        .btn-group { margin-top: 15px; }
+        button { background: #c00000; color: #fff; border: none; padding: 10px 15px; cursor: pointer; font-weight: bold; margin-right: 10px; border-radius: 4px;}
+        button:hover { background: #e60000; }
         button.reset { background: #444; }
-        textarea { width: 100%; height: 120px; background: #1a1a1a; color: #00ff00; font-family: monospace; padding: 10px; margin-top: 20px; box-sizing: border-box; border: 1px solid #333;}
+        button.reset:hover { background: #555; }
+        textarea { width: 100%; height: 120px; background: #1a1a1a; color: #00ff00; font-family: monospace; padding: 10px; margin-top: 20px; box-sizing: border-box; border: 1px solid #333; border-radius: 4px; resize: none;}
+        .hint { font-size: 11px; color: #666; margin-top: 4px; }
     </style>
 </head>
 <body>
 
-    <h2>ASHMETAL666 JSON ENTRY GENERATOR</h2>
-    <hr border="1" color="#c00000">
+    <h2>ASHMETAL666 SMART ENTRY GENERATOR</h2>
+    <hr style="border: 1px solid #c00000;">
     <br>
 
     <div class="form-group">
-        <label>URL MP3 Dropbox</label>
-        <input type="text" id="src" placeholder="https://dl.dropboxusercontent.com/...">
+        <label>1. URL MP3 Dropbox</label>
+        <input type="text" id="src" placeholder="https://dl.dropboxusercontent.com/..." oninput="autoExtractData()">
+        <div class="hint">Tempel link Dropbox di sini untuk mengisi kolom di bawah secara otomatis.</div>
+    </div>
+    <div class="form-group">
+        <label>Nama Band / Artist</label>
+        <input type="text" id="artist" placeholder="Terisi otomatis atau ketik manual...">
     </div>
     <div class="form-group">
         <label>Judul Lagu</label>
-        <input type="text" id="title" placeholder="Misal: Bloody Prophecy">
-    </div>
-    <div class="form-group">
-        <label>Nama Band</label>
-        <input type="text" id="artist" placeholder="Misal: The Salvatory">
-    </div>
-    <div class="form-group">
-        <label>URL Thumbnail</label>
-        <input type="text" id="img" placeholder="http://...">
+        <input type="text" id="title" placeholder="Terisi otomatis atau ketik manual...">
     </div>
 
-    <button onclick="generateJSON()">Generate JSON</button>
-    <button class="reset" onclick="resetForm()">Reset Form</button>
+    <div class="btn-group">
+        <button onclick="generateJSON()">Generate JSON</button>
+        <button class="reset" onclick="resetForm()">Reset Form</button>
+    </div>
 
     <textarea id="output" readonly placeholder="Hasil format JSON akan muncul di sini..."></textarea>
     <br><br>
-    <button onclick="copyJSON()" style="background:#0088cc;">Copy JSON</button>
+    <button onclick="copyJSON()" style="background:#0088cc; width: 100%;">Copy JSON</button>
 
     <script>
+        // Fungsi Pintar: Ekstrak otomatis nama band & judul dari nama file Dropbox
+        function autoExtractData() {
+            let srcInput = document.getElementById('src').value.trim();
+            if (!srcInput) return;
+
+            try {
+                // Ambil teks nama file sebelum parameter tanda tanya (?)
+                const urlClean = srcInput.split('?')[0];
+                const fileNameWithExt = urlClean.substring(urlClean.lastIndexOf('/') + 1);
+                
+                // Decode spasi dan hilangkan ekstensi .mp3
+                let fileName = decodeURIComponent(fileNameWithExt.replace(/\+/g, ' ')).replace(/\.mp3$/i, '');
+
+                let artist = "";
+                let title = "";
+
+                // Pecah teks jika menggunakan pemisah '-' atau '_'
+                if (fileName.includes('-')) {
+                    const parts = fileName.split('-');
+                    artist = parts[0].trim();
+                    title = parts.slice(1).join('-').trim();
+                } else if (fileName.includes('_')) {
+                    const parts = fileName.split('_');
+                    artist = parts[0].trim();
+                    title = parts.slice(1).join(' ').trim();
+                } else {
+                    title = fileName;
+                }
+
+                // Bersihkan karakter underscore menjadi spasi normal
+                document.getElementById('artist').value = artist.replace(/_/g, ' ');
+                document.getElementById('title').value = title.replace(/_/g, ' ');
+            } catch (e) {
+                console.error("Gagal memilah nama file otomatis", e);
+            }
+        }
+
         function generateJSON() {
-            const src = document.getElementById('src').value.trim();
+            let src = document.getElementById('src').value.trim();
             const title = document.getElementById('title').value.trim();
             const artist = document.getElementById('artist').value.trim();
-            const img = document.getElementById('img').value.trim();
 
-            if(!src || !title || !artist || !img) {
+            if(!src || !title || !artist) {
                 alert('Semua bidang input wajib diisi!');
                 return;
             }
 
-            const jsonObj = { src, title, artist, img };
-            // Hasil cetak mentah ditambahkan koma di ujung sesuai request untuk mempermudah append massal
+            // Memastikan URL Dropbox menggunakan parameter ?raw=1 agar streaming/download langsung bekerja
+            if (src.includes('?')) {
+                src = src.replace(/dl=0|dl=1/g, 'raw=1');
+                if (!src.includes('raw=1')) src += '&raw=1';
+            } else {
+                src += '?raw=1';
+            }
+
+            // Struktur Baru: Tanpa objek "img" karena dibaca via biner MP3
+            const jsonObj = { src, title, artist };
             const resultString = JSON.stringify(jsonObj, null, 2) + ",";
             document.getElementById('output').value = resultString;
         }
@@ -65,12 +114,12 @@
             document.getElementById('src').value = '';
             document.getElementById('title').value = '';
             document.getElementById('artist').value = '';
-            document.getElementById('img').value = '';
             document.getElementById('output').value = '';
         }
 
         function copyJSON() {
             const output = document.getElementById('output');
+            if(!output.value) return;
             output.select();
             document.execCommand('copy');
             alert('Format teks JSON berhasil disalin!');
