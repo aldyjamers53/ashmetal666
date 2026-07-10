@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASHMETAL666 - XML Sitemap Creator</title>
+    <style>
+        body { background: #111; color: #fff; font-family: sans-serif; padding: 20px; max-width: 600px; margin: 0 auto; text-align: center; }
+        h2 { color: #c00000; }
+        button { background: #c00000; color: #fff; border: none; padding: 12px 20px; font-weight: bold; cursor: pointer; border-radius: 4px; font-size: 16px; margin-top: 15px; width: 100%; }
+        button:hover { background: #e60000; }
+        textarea { width: 100%; height: 250px; background: #1a1a1a; color: #00ff00; font-family: monospace; padding: 10px; margin-top: 15px; box-sizing: border-box; border: 1px solid #333; }
+    </style>
+</head>
+<body>
+
+    <h2>ASHMETAL666 SITEMAP AUTOMATION</h2>
+    <p style="color: #888; font-size: 13px;">Click the button below to fetch all tracks from databases and generate a fully valid Google Sitemap.</p>
+    
+    <button onclick="buildSitemapXML()">🔥 Generate & Download sitemap.xml</button>
+    
+    <textarea id="xmlResult" readonly placeholder="The generated XML code will be displayed here..."></textarea>
+
+    <script>
+        async function buildSitemapXML() {
+            // Daftar database lagu kamu saat ini
+            const dbFiles = ['database.json', 'database2.json', 'database3.json'];
+            let allSongs = [];
+
+            // Mengambil data secara asinkronus langsung melewati browser tanpa bantuan server build Vercel
+            for (const file of dbFiles) {
+                try {
+                    const response = await fetch(file);
+                    if (response.ok) {
+                        const textData = await response.text();
+                        let cleanData = textData.trim();
+                        if (cleanData.endsWith(',')) cleanData = cleanData.slice(0, -1);
+                        if (!cleanData.startsWith('[')) cleanData = '[' + cleanData + ']';
+                        
+                        const songs = JSON.parse(cleanData);
+                        allSongs = allSongs.concat(songs);
+                    }
+                } catch (e) {
+                    console.log("Database skip or empty: " + file);
+                }
+            }
+
+            const today = new Date().toISOString().split('T')[0];
+            let xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;
+
+            // Halaman Utama Statis
+            const staticPages = ['/', '/about.html', '/request.html'];
+            staticPages.forEach(page => {
+                xml += `  <url>\n    <loc>https://ashmetal666.vercel.app${page}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>${page === '/' ? '1.0' : '0.5'}</priority>\n  </url>\n`;
+            });
+
+            // Olah Otomatis Seluruh Lagu Menjadi URL Enkripsi XML Valid
+            allSongs.forEach(song => {
+                const encodedData = encodeURIComponent(JSON.stringify(song));
+                const safeUrl = `https://ashmetal666.vercel.app/play.html?data=${encodedData}`
+                    .replace(/&/g, '&amp;')
+                    .replace(/</g, '&lt;')
+                    .replace(/>/g, '&gt;');
+
+                xml += `  <url>\n    <loc>${safeUrl}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>\n`;
+            });
+
+            xml += `</urlset>`;
+            document.getElementById('xmlResult').value = xml;
+
+            // Mengunduh langsung berkas teks XML ke penyimpanan lokal perangkat
+            const blob = new Blob([xml], { type: 'text/xml' });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = 'sitemap.xml';
+            link.click();
+            
+            alert('Success! sitemap.xml has been compiled and downloaded.');
+        }
+    </script>
+</body>
+</html>
