@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembersih URL & Generator Massal</title>
+    <style>
+        body { background: #111; color: #fff; font-family: sans-serif; padding: 20px; max-width: 800px; margin: 0 auto; }
+        h2 { color: #00ffcc; text-align: center; }
+        .box { background: #1a1a1a; padding: 15px; border-radius: 6px; margin-bottom: 15px; border: 1px solid #333; }
+        .row { display: flex; gap: 10px; margin-bottom: 10px; }
+        input, textarea { width: 100%; padding: 10px; background: #222; color: #fff; border: 1px solid #444; box-sizing: border-box; border-radius: 4px; }
+        textarea { height: 180px; font-family: monospace; }
+        button { background: #00ffcc; color: #000; border: none; padding: 12px; font-weight: bold; cursor: pointer; width: 100%; font-size: 16px; border-radius: 4px; }
+        button:hover { background: #00ccaa; }
+        #output { color: #ffff00; height: 250px; }
+    </style>
+</head>
+<body>
+
+    <h2>🧹 PEMBERSIH URL & GEN DATABASE MASSAL</h2>
+
+    <!-- INFO ALBUM GLOBAL -->
+    <div class="box">
+        <p style="margin-top:0; color:#aaa; font-weight:bold;">1. Tag Info Album Baru</p>
+        <div class="row">
+            <input type="text" id="album" placeholder="Nama Album (Contoh: Avenged Sevenfold)">
+            <input type="text" id="artist" placeholder="Nama Artis / Band (Contoh: Avenged Sevenfold)">
+        </div>
+        <input type="text" id="cover" placeholder="URL Link Gambar Cover (.jpg / .png)">
+    </div>
+
+    <!-- INPUT DATA KOTOR -->
+    <div class="box">
+        <p style="margin-top:0; color:#aaa; font-weight:bold;">2. Tempel Data Kotor Hasil Ekstensi (CSV) di Sini</p>
+        <textarea id="dirtyData" placeholder="Tempel langsung semua teks hasil ekstensi yang masih kotor di sini..."></textarea>
+    </div>
+
+    <button onclick="cleanAndGenerate()">🔥 BERSIHKAN & GENERATE JSON MASSAL</button>
+
+    <!-- HASIL OUTPUT SCRIPT -->
+    <div class="box" style="margin-top:15px;">
+        <p style="margin-top:0; color:#aaa; font-weight:bold;">3. Hasil Potongan Script JSON Bersih (Tinggal Copy)</p>
+        <textarea id="output" readonly placeholder="Hasil potongan database yang sudah bersih akan muncul di sini..."></textarea>
+    </div>
+
+    <script>
+        function cleanAndGenerate() {
+            const albumName = document.getElementById('album').value || "Unknown Album";
+            const artistName = document.getElementById('artist').value || "Unknown Artist";
+            const coverUrl = document.getElementById('cover').value || "";
+            const dirtyText = document.getElementById('dirtyData').value;
+
+            // Memecah teks baris demi baris
+            const lines = dirtyText.split('\n').map(l => l.trim()).filter(l => l.length > 0);
+            
+            let resultObjects = [];
+
+            lines.forEach(line => {
+                // Lewati baris judul tabel jika terbawa
+                if (line.startsWith('URL,Title') || line.includes('?src=shmodel')) return;
+
+                // Memisahkan data berdasarkan tanda koma, lalu membersihkan tanda kutip dua (")
+                const columns = line.split('","').map(col => col.replace(/"/g, ''));
+                
+                if (columns.length > 0) {
+                    let originalUrl = columns[0];
+                    
+                    // Filter: Hanya proses jika baris tersebut mengandung file .mp3
+                    if (originalUrl.includes('.mp3')) {
+                        
+                        // 1. Bersihkan dan Ubah Link Dropbox menjadi Direct Link Stream Murni
+                        let directUrl = originalUrl
+                            .replace('www.dropbox.com', 'dl.dropboxusercontent.com')
+                            .replace('dl=0', 'raw=1');
+
+                        // 2. Ambil Nama File untuk Dijadikan Judul Lagu yang Bersih
+                        let title = columns[1] || "";
+                        title = title
+                            .replace('.mp3', '')          // Buang ekstensi .mp3
+                            .replace(/[-_]/g, ' ')        // Ubah garis bawah / strip jadi spasi biasa
+                            .replace(/Avenged Sevenfold/gi, '').trim(); // Opsional: potong nama band di judul lagu jika duplikat
+                        
+                        // Masukkan ke dalam susunan object database.json kamu
+                        resultObjects.push({
+                            "src": directUrl,
+                            "title": title,
+                            "artist": artistName,
+                            "album": albumName,
+                            "cover": coverUrl
+                        });
+                    }
+                }
+            });
+
+            if (resultObjects.length === 0) {
+                alert('Tidak ada link MP3 valid yang ditemukan atau dibersihkan!');
+                return;
+            }
+
+            // Mengubah menjadi teks JSON murni
+            let jsonString = JSON.stringify(resultObjects, null, 2);
+            
+            // Menghilangkan kurung siku pembungkus [ dan ] agar menjadi potongan siap tempel
+            if (jsonString.startsWith('[')) jsonString = jsonString.substring(1);
+            if (jsonString.endsWith(']')) jsonString = jsonString.substring(0, jsonString.length - 1);
+
+            document.getElementById('output').value = jsonString.trim();
+            alert(`Sukses membersihkan ${resultObjects.length} lagu secara massal!`);
+        }
+    </script>
+</body>
+</html>
