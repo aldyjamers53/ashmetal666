@@ -1,7 +1,0 @@
-{
-  "name": "ashmetal666-sitemap-generator",
-  "version": "1.0.0",
-  "scripts": {
-    "postinstall": "node generate-sitemap.js"
-  }
-}
