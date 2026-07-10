@@ -15,6 +15,8 @@
         button:hover { background: #cc0000; }
         .btn-copy { background: #00ffcc; color: #000; margin-top: 10px; }
         .btn-copy:hover { background: #00ccaa; }
+        .btn-clear { background: #555; color: #fff; margin-top: 10px; }
+        .btn-clear:hover { background: #444; }
         #output { color: #00ff00; height: 250px; }
     </style>
 </head>
@@ -45,8 +47,9 @@
         <p style="margin-top:0; color:#aaa; font-weight:bold;">3. Hasil Potongan Script JSON (Tinggal Copy & Paste ke GitHub)</p>
         <textarea id="output" readonly placeholder="Hasil potongan database yang sudah pas akan muncul di sini..."></textarea>
         
-        <!-- TOMBOL COPY MANDIRI -->
+        <!-- TOMBOL AKSI UTAMA -->
         <button onclick="copyToClipboard()" class="btn-copy" id="btnCopy">📋 SALIN SCRIPT JSON</button>
+        <button onclick="clearForm()" class="btn-clear">🗑️ BERSIHKAN SEMUA KOLOM</button>
     </div>
 
     <script>
@@ -118,12 +121,11 @@
 
             document.getElementById('output').value = jsonString.trim();
             
-            // Reset text tombol salin jika generate ulang
             document.getElementById('btnCopy').innerText = "📋 SALIN SCRIPT JSON";
             alert(`Sukses! ${resultObjects.length} data lagu dikonversi secara presisi.`);
         }
 
-        // FUNGSI COPY MASSAL OTOMATIS
+        // FUNGSI COPY MASSAL
         function copyToClipboard() {
             const outputText = document.getElementById('output');
             if (!outputText.value) {
@@ -132,7 +134,7 @@
             }
             
             outputText.select();
-            outputText.setSelectionRange(0, 99999); // Untuk perangkat HP/Mobile
+            outputText.setSelectionRange(0, 99999);
             
             navigator.clipboard.writeText(outputText.value).then(() => {
                 const btn = document.getElementById('btnCopy');
@@ -143,6 +145,18 @@
             }).catch(() => {
                 alert('Gagal menyalin otomatis, silakan blok teks manual.');
             });
+        }
+
+        // FUNGSI HAPUS / RESET FORM TOTAL
+        function clearForm() {
+            if (confirm("Apakah kamu yakin ingin mengosongkan semua data di atas?")) {
+                document.getElementById('album').value = "";
+                document.getElementById('artist').value = "";
+                document.getElementById('img').value = "";
+                document.getElementById('dirtyData').value = "";
+                document.getElementById('output').value = "";
+                document.getElementById('btnCopy').innerText = "📋 SALIN SCRIPT JSON";
+            }
         }
     </script>
 </body>
