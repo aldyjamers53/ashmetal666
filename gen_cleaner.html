@@ -13,6 +13,8 @@
         textarea { height: 180px; font-family: monospace; }
         button { background: #ff3333; color: #fff; border: none; padding: 12px; font-weight: bold; cursor: pointer; width: 100%; font-size: 16px; border-radius: 4px; }
         button:hover { background: #cc0000; }
+        .btn-copy { background: #00ffcc; color: #000; margin-top: 10px; }
+        .btn-copy:hover { background: #00ccaa; }
         #output { color: #00ff00; height: 250px; }
     </style>
 </head>
@@ -20,6 +22,7 @@
 
     <h2>🧹 ASHMETAL666 URL CLEANER & MASS GENERATOR</h2>
 
+    <!-- INFO ALBUM GLOBAL -->
     <div class="box">
         <p style="margin-top:0; color:#aaa; font-weight:bold;">1. Tag Info Album Baru</p>
         <div class="row">
@@ -29,6 +32,7 @@
         <input type="text" id="img" placeholder="URL Link Gambar Cover (Contoh: https://www.metal-archives.com/...)">
     </div>
 
+    <!-- INPUT DATA KOTOR -->
     <div class="box">
         <p style="margin-top:0; color:#aaa; font-weight:bold;">2. Tempel Data Kotor Hasil Ekstensi (CSV) di Sini</p>
         <textarea id="dirtyData" placeholder="Tempel langsung semua teks hasil ekstensi yang masih kotor di sini..."></textarea>
@@ -36,9 +40,13 @@
 
     <button onclick="cleanAndGenerate()">🔥 BERSIHKAN & GENERATE JSON MASSAL</button>
 
+    <!-- HASIL OUTPUT SCRIPT -->
     <div class="box" style="margin-top:15px;">
         <p style="margin-top:0; color:#aaa; font-weight:bold;">3. Hasil Potongan Script JSON (Tinggal Copy & Paste ke GitHub)</p>
         <textarea id="output" readonly placeholder="Hasil potongan database yang sudah pas akan muncul di sini..."></textarea>
+        
+        <!-- TOMBOL COPY MANDIRI -->
+        <button onclick="copyToClipboard()" class="btn-copy" id="btnCopy">📋 SALIN SCRIPT JSON</button>
     </div>
 
     <script>
@@ -77,20 +85,16 @@
                     let title = columns[1].trim();
                     
                     if (originalUrl.includes('.mp3')) {
-                        // 1. Ubah Link MP3 Dropbox ke Direct Stream yang Valid sesuai formatmu
                         let directUrl = originalUrl
                             .replace('www.dropbox.com', 'dl.dropboxusercontent.com')
                             .replace('dl=0', 'raw=1');
 
-                        // 2. Bersihkan Judul Lagu (Buang .mp3, ubah _ atau - menjadi spasi)
                         title = title
                             .replace(/\.mp3$/i, '')
                             .replace(/[-_]/g, ' ')
-                            // Memotong nama band di depan judul lagu agar tidak dobel jika diinginkan
                             .replace(new RegExp(artistName, 'gi'), '')
                             .trim();
                         
-                        // Membuat struktur data yang persis dengan database lamamu
                         resultObjects.push({
                             "src": directUrl,
                             "title": title,
@@ -109,12 +113,36 @@
 
             let jsonString = JSON.stringify(resultObjects, null, 2);
             
-            // Hilangkan kurung siku pembungkus agar siap disisipkan langsung
             if (jsonString.startsWith('[')) jsonString = jsonString.substring(1);
             if (jsonString.endsWith(']')) jsonString = jsonString.substring(0, jsonString.length - 1);
 
             document.getElementById('output').value = jsonString.trim();
+            
+            // Reset text tombol salin jika generate ulang
+            document.getElementById('btnCopy').innerText = "📋 SALIN SCRIPT JSON";
             alert(`Sukses! ${resultObjects.length} data lagu dikonversi secara presisi.`);
+        }
+
+        // FUNGSI COPY MASSAL OTOMATIS
+        function copyToClipboard() {
+            const outputText = document.getElementById('output');
+            if (!outputText.value) {
+                alert('Belum ada data yang di-generate untuk disalin!');
+                return;
+            }
+            
+            outputText.select();
+            outputText.setSelectionRange(0, 99999); // Untuk perangkat HP/Mobile
+            
+            navigator.clipboard.writeText(outputText.value).then(() => {
+                const btn = document.getElementById('btnCopy');
+                btn.innerText = "✅ SCRIPT BERHASIL DISALIN!";
+                setTimeout(() => {
+                    btn.innerText = "📋 SALIN SCRIPT JSON";
+                }, 3000);
+            }).catch(() => {
+                alert('Gagal menyalin otomatis, silakan blok teks manual.');
+            });
         }
     </script>
 </body>
