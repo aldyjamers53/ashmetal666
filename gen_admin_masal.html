@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gen Admin Massal - ASHMETAL666</title>
+    <style>
+        body { background: #111; color: #fff; font-family: sans-serif; padding: 20px; max-width: 700px; margin: 0 auto; }
+        h2 { color: #ffcc00; text-align: center; font-size: 22px; }
+        .box { background: #1a1a1a; padding: 15px; border-radius: 6px; margin-bottom: 15px; border: 1px solid #333; }
+        .row { display: flex; gap: 10px; margin-bottom: 10px; }
+        input, textarea { width: 100%; padding: 10px; background: #222; color: #fff; border: 1px solid #444; box-sizing: border-box; border-radius: 4px; }
+        textarea { height: 150px; font-family: monospace; }
+        button { background: #ffcc00; color: #000; border: none; padding: 12px; font-weight: bold; cursor: pointer; width: 100%; font-size: 16px; border-radius: 4px; }
+        button:hover { background: #e6b800; }
+        #output { color: #ffff00; height: 200px; }
+    </style>
+</head>
+<body>
+
+    <h2>🛠️ DASHBOARD GEN ADMIN MASSAL</h2>
+
+    <div class="box">
+        <p style="margin-top:0; color:#aaa; font-weight:bold;">1. Tag Album (Isi Sekali untuk Semua Lagu)</p>
+        <div class="row">
+            <input type="text" id="album" placeholder="Nama Album">
+            <input type="text" id="artist" placeholder="Nama Artis / Band">
+        </div>
+        <input type="text" id="cover" placeholder="URL Link Gambar Cover (.jpg / .png)">
+    </div>
+
+    <div class="box">
+        <p style="margin-top:0; color:#aaa; font-weight:bold;">2. Tempel Ratusan Link MP3 Hasil Ekstrak</p>
+        <textarea id="cleanUrls" placeholder="https://dl.dropboxusercontent.com/...\nhttps://dl.dropboxusercontent.com/..."></textarea>
+    </div>
+
+    <button onclick="generateMassal()">🔥 GENERATE SCRIPT DATA MASSAL</button>
+
+    <div class="box" style="margin-top:15px;">
+        <p style="margin-top:0; color:#aaa; font-weight:bold;">3. Hasil Potongan Script JSON (Tinggal Copy)</p>
+        <textarea id="output" readonly placeholder="Hasil generate akan muncul di sini..."></textarea>
+    </div>
+
+    <script>
+        function getTitleFromUrl(url) {
+            try {
+                const decoded = decodeURIComponent(url);
+                const filename = decoded.substring(decoded.lastIndexOf('/') + 1).split('?')[0];
+                // Menghapus ekstensi .mp3 dan mengubah simbol _ atau - menjadi spasi biasa
+                return filename.replace(/\.[^/.]+$/, "").replace(/[-_]/g, " ");
+            } catch(e) { 
+                return "Track Baru"; 
+            }
+        }
+
+        function generateMassal() {
+            const albumName = document.getElementById('album').value || "Unknown Album";
+            const artistName = document.getElementById('artist').value || "Unknown Artist";
+            const coverUrl = document.getElementById('cover').value || "";
+            const urlsText = document.getElementById('cleanUrls').value;
+
+            const urls = urlsText.split('\n').map(u => u.trim()).filter(u => u.length > 0);
+            
+            if (urls.length === 0) {
+                alert('Masukkan link MP3 terlebih dahulu!');
+                return;
+            }
+
+            let resultObjects = [];
+
+            urls.forEach(url => {
+                resultObjects.push({
+                    "src": url,
+                    "title": getTitleFromUrl(url),
+                    "artist": artistName,
+                    "album": albumName,
+                    "cover": coverUrl
+                });
+            });
+
+            // Mengubah objek menjadi teks string JSON yang rapi
+            let jsonString = JSON.stringify(resultObjects, null, 2);
+            
+            // Menghilangkan tanda kurung siku [ dan ] di awal/akhir agar berbentuk potongan data murni murni
+            if (jsonString.startsWith('[')) {
+                jsonString = jsonString.substring(1);
+            }
+            if (jsonString.endsWith(']')) {
+                jsonString = jsonString.substring(0, jsonString.length - 1);
+            }
+
+            document.getElementById('output').value = jsonString.trim();
+            alert('Sukses! Puluhan/Ratusan data lagu berhasil dibuat.');
+        }
+    </script>
+</body>
+</html>
