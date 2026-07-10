@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
-  <!-- 1. URL Beranda Utama Website -->
+  <!-- Main Homepage -->
   <url>
     <loc>https://ashmetal666.vercel.app/</loc>
     <lastmod>2026-07-10</lastmod>
@@ -9,28 +9,19 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- 2. URL Pemutar Lagu: Sagetih - Encephalitis Infection -->
+  <!-- Static Pages -->
   <url>
-    <loc>https://ashmetal666.vercel.app/play.html?data=%7B%22src%22%3A%22https%3A%2F%2Fdl.dropboxusercontent.com%2Fscl%2Ffi%2Fe3nxh028ygxrvfn45a34w%2FSagetih-Encephalitis_Infection.mp3%3Frlkey%3Dqohq661ippgph4bw9qxm0uy78%26st%3D5bk8xa3v%26raw%3D1%22%2C%22title%22%3A%22Encephalitis%20Infection%22%2C%22artist%22%3A%22Sagetih%22%2C%22img%22%3A%22https%3A%2F%2Fwww.metal-archives.com%2Fimages%2F1%2F4%2F2%2F8%2F1428197.jpg%22%7D</loc>
+    <loc>https://ashmetal666.vercel.app/about.html</loc>
     <lastmod>2026-07-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
 
-  <!-- 3. URL Pemutar Lagu: Thoryvodis - Invasi Pasukan Dajal -->
   <url>
-    <loc>https://ashmetal666.vercel.app/play.html?data=%7B%22src%22%3A%22https%3A%2F%2Fdl.dropboxusercontent.com%2Fscl%2Ffi%2Ff5aybkrtet5un1qdu7x2e%2FThoryvodis-Invasi_Pasukan_Dajal.mp3%3Frlkey%3D1w9hmrl5hfqkpxd5oq8ddxsjm%26st%3D49895q9y%26raw%3D1%22%2C%22title%22%3A%22Invasi%20Pasukan%20Dajal%22%2C%22artist%22%3A%22Thoryvodis%22%2C%22img%22%3A%22https%3A%2F%2Fwww.metal-archives.com%2Fimages%2F1%2F4%2F5%2F1%2F1451881.jpg%22%7D</loc>
+    <loc>https://ashmetal666.vercel.app/request.html</loc>
     <lastmod>2026-07-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- 4. URL Pemutar Lagu: As Bright as the Stars - A lost Shadow -->
-  <url>
-    <loc>https://ashmetal666.vercel.app/play.html?data=%7B%22src%22%3A%22https%3A%2F%2Fdl.dropboxusercontent.com%2Fscl%2Ffi%2Fcz7j68nmehz3hpi46qy15%2F1-As-Bright-as-the-Stars-A-lost-Shadow.mp3%3Frlkey%3D2eweuy4ty9wfdcoef6r6lfmyl%26st%3Dtyc0p4nr%26raw%3D1%22%2C%22title%22%3A%22A%20lost%20Shadow%22%2C%22artist%22%3A%22As%20Bright%20as%20the%20Stars%22%2C%22img%22%3A%22https%3A%2F%2Fwww.metal-archives.com%2Fimages%2F1%2F4%2F4%2F8%2F1448806.jpg%22%7D</loc>
-    <lastmod>2026-07-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
 
 </urlset>
