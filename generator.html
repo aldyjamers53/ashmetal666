@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASHMETAL666 - Bulk URL & Database Generator</title>
+    <style>
+        body { background: #111; color: #fff; font-family: sans-serif; padding: 20px; max-width: 800px; margin: 0 auto; }
+        h2 { color: #c00000; text-align: center; }
+        .box { background: #1a1a1a; padding: 20px; border-radius: 8px; margin-bottom: 20px; border: 1px solid #333; }
+        label { font-weight: bold; display: block; margin-bottom: 5px; color: #aaa; }
+        input, textarea, select { width: 100%; padding: 10px; background: #222; color: #fff; border: 1px solid #444; border-radius: 4px; box-sizing: border-box; margin-bottom: 15px; }
+        button { background: #c00000; color: #fff; border: none; padding: 12px; font-weight: bold; cursor: pointer; border-radius: 4px; width: 100%; font-size: 16px; }
+        button:hover { background: #e60000; }
+        .flex { display: flex; gap: 10px; }
+        textarea { height: 150px; font-family: monospace; }
+        #output { color: #00ff00; height: 250px; }
+    </style>
+</head>
+<body>
+
+    <h2>⚡ ASHMETAL666 URL & DATABASE GENERATOR ⚡</h2>
+
+    <!-- Bagian 1: Pengaturan Album (Global) -->
+    <div class="box">
+        <h3>1. Informasi Album Baru (Isi Sekali untuk Semua Lagu)</h3>
+        <div class="flex">
+            <div>
+                <label>Nama Album</label>
+                <input type="text" id="albumName" placeholder="Contoh: Metal Core 2026">
+            </div>
+            <div>
+                <label>Artis / Band</label>
+                <input type="text" id="albumArtist" placeholder="Contoh: Various Artists">
+            </div>
+        </div>
+        <label>URL Gambar Cover Album</label>
+        <input type="text" id="albumCover" placeholder="https://link-gambar-cover.com/cover.jpg">
+    </div>
+
+    <!-- Bagian 2: Sumber URL Massal -->
+    <div class="box">
+        <h3>2. Input Link Folder / Kumpulan Link MP3</h3>
+        <label>Pilih Metode Input</label>
+        <select id="inputMethod" onchange="toggleInput()">
+            <option value="bulk">Metode Massal: Tempel Ratusan Link MP3 Langsung</option>
+            <option value="dropbox">Metode Otomatis: Scan Link Folder Dropbox</option>
+        </select>
+
+        <div id="divBulk">
+            <label>Tempel Semua Link URL MP3 di sini (Satu baris satu link)</label>
+            <textarea id="bulkUrls" placeholder="https://mega.nz/file/...\nhttps://drive.google.com/...\nhttps://dropbox.com/..."></textarea>
+        </div>
+
+        <div id="divDropbox" style="display:none;">
+            <label>Masukkan URL Folder Dropbox</label>
+            <input type="text" id="dropboxFolderUrl" placeholder="https://www.dropbox.com/sh/asdfghjkl/AAAAA?dl=0">
+            <p style="font-size:12px; color:#888; margin-top:-10px;">*Catatan: Pastikan folder Dropbox diset publik agar sistem bisa membaca kodenya.</p>
+        </div>
+    </div>
+
+    <!-- Bagian 3: Database Lama (Untuk Digabungkan) -->
+    <div class="box">
+        <h3>3. Gabungkan dengan Database Lama (Anti-Rusak Data)</h3>
+        <label>Tempel Isi `database.json` Lama Kamu (Opsional - Jika ingin langsung digabung)</label>
+        <textarea id="oldDatabase" placeholder="[ { 'title': 'Lagu Lama', ... } ]"></textarea>
+    </div>
+
+    <button onclick="processDatabase()">🔥 GENERATE & GABUNGKAN DATABASE.JSON</button>
+
+    <!-- Bagian 4: Hasil Akhir -->
+    <div class="box" style="margin-top:20px;">
+        <h3>4. Hasil File database.json Baru</h3>
+        <textarea id="output" readonly></textarea>
+        <button onclick="downloadJson()" style="background:#0066cc; margin-top:10px;">💾 Download File database.json</button>
+    </div>
+
+    <script>
+        function toggleInput() {
+            const method = document.getElementById('inputMethod').value;
+            document.getElementById('divBulk').style.display = method === 'bulk' ? 'block' : 'none';
+            document.getElementById('divDropbox').style.display = method === 'dropbox' ? 'block' : 'none';
+        }
+
+        function cleanDropboxUrl(url) {
+            // Mengubah link share biasa menjadi link download murni/direct stream
+            return url.replace('www.dropbox.com', 'dl.dropboxusercontent.com').replace('?dl=0', '').replace('&dl=0', '');
+        }
+
+        function getFileNameFromUrl(url) {
+            try {
+                const decodedUrl = decodeURIComponent(url);
+                const baseName = decodedUrl.substring(decodedUrl.lastIndexOf('/') + 1).split('?')[0];
+                return baseName.replace(/\.[^/.]+$/, "").replace(/[-_]/g, " ");
+            } catch (e) {
+                return "Track Baru";
+            }
+        }
+
+        async function processDatabase() {
+            const method = document.getElementById('inputMethod').value;
+            const albumName = document.getElementById('albumName').value || "Unknown Album";
+            const artist = document.getElementById('albumArtist').value || "Unknown Artist";
+            const cover = document.getElementById('albumCover').value || "";
+            
+            let urls = [];
+
+            if (method === 'bulk') {
+                const text = document.getElementById('bulkUrls').value;
+                urls = text.split('\n').map(u => u.trim()).filter(u => u.length > 0);
+            } else if (method === 'dropbox') {
+                alert('Fitur scan folder memerlukan parsing HTML. Untuk hasil paling stabil, disarankan salin massal tautan file dari Dropbox dan gunakan Metode Massal.');
+                return;
+            }
+
+            // Buat Struktur Data Baru
+            let newSongs = [];
+            urls.forEach(url => {
+                let finalUrl = url;
+                if (url.includes('dropbox.com')) {
+                    finalUrl = cleanDropboxUrl(url);
+                }
+
+                const title = getFileNameFromUrl(finalUrl);
+
+                newSongs.push({
+                    "title": title,
+                    "artist": artist,
+                    "album": albumName,
+                    "cover": cover,
+                    "url": finalUrl
+                });
+            });
+
+            // Baca & Gabungkan Data Lama
+            let finalDatabase = [];
+            const oldDbText = document.getElementById('oldDatabase').value.trim();
+            
+            if (oldDbText) {
+                try {
+                    // Validasi jika data lama berformat objek mentah beruntun, rapikan menjadi array valid
+                    let cleanOldDb = oldDbText;
+                    if (cleanOldDb.endsWith(',')) cleanOldDb = cleanOldDb.slice(0, -1);
+                    if (!cleanOldDb.startsWith('[')) cleanOldDb = '[' + cleanOldDb + ']';
+                    
+                    finalDatabase = JSON.parse(cleanOldDb);
+                } catch (e) {
+                    alert('Format database lama tidak valid JSON! Periksa kembali.');
+                    return;
+                }
+            }
+
+            // Gabungkan: Data lama tetap di atas, data baru masuk di bawahnya
+            finalDatabase = finalDatabase.concat(newSongs);
+
+            // Tampilkan hasil berformat cantik di kotak output
+            document.getElementById('output').value = JSON.stringify(finalDatabase, null, 2);
+            alert('Sukses! Ratusan link berhasil di-generate dan digabungkan.');
+        }
+
+        function downloadJson() {
+            const data = document.getElementById('output').value;
+            if (!data) return alert('Belum ada data untuk diunduh!');
+            const blob = new Blob([data], { type: 'application/json' });
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = 'database.json';
+            a.click();
+        }
+    </script>
+</body>
+</html>
