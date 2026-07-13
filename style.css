@@ -1,22 +1,21 @@
-/* Reset & Base Styles */
-* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; }
+{ box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; }
 body { background-color: #111111; color: #ffffff; line-height: 1.6; padding: 10px; }
 a { color: #ffffff; text-decoration: none; }
 img { max-width: 100%; height: auto; display: block; background-color: #222; }
 
-/* Header & Navigation */
+
 header { text-align: center; padding: 15px 0; border-bottom: 2px solid #c00000; margin-bottom: 15px; }
 header h1 { color: #c00000; font-size: 24px; letter-spacing: 2px; }
 nav { display: flex; justify-content: center; gap: 10px; margin-top: 10px; flex-wrap: wrap; }
 nav a { font-size: 14px; background: #222; padding: 5px 10px; border-radius: 3px; border: 1px solid #333; }
 nav a:hover { background: #c00000; }
 
-/* Search Bar */
+
 .search-container { margin-bottom: 15px; }
 .search-container input { width: 100%; padding: 12px; background: #222; border: 1px solid #444; color: #fff; border-radius: 4px; font-size: 16px; }
 .search-container input:focus { border-color: #c00000; outline: none; }
 
-/* Song List & Cards */
+
 .song-list { display: grid; grid-template-columns: 1fr; gap: 10px; }
 .song-card { display: flex; background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 5px; padding: 10px; align-items: center; }
 .song-thumb { width: 60px; height: 60px; object-fit: cover; border-radius: 4px; margin-right: 12px; }
@@ -28,22 +27,22 @@ nav a:hover { background: #c00000; }
 .btn-play { background: #c00000; color: #fff; }
 .btn-dl { background: #333; color: #fff; border: 1px solid #444; }
 
-/* Pagination */
+
 .pagination { display: flex; justify-content: center; align-items: center; gap: 5px; margin: 20px 0; }
 .pagination button, .pagination a { padding: 8px 12px; background: #222; border: 1px solid #333; color: #fff; font-size: 14px; border-radius: 3px; cursor: pointer; }
 .pagination .active { background: #c00000; border-color: #c00000; font-weight: bold; }
 .pagination button:disabled { opacity: 0.4; cursor: not-allowed; }
 
-/* Player Page Specific */
+
 .player-container { background: #1a1a1a; border: 1px solid #2a2a2a; padding: 20px; border-radius: 5px; text-align: center; margin-bottom: 20px; }
 .player-img { width: 200px; height: 200px; object-fit: cover; margin: 0 auto 15px; border-radius: 8px; border: 2px solid #c00000; }
 audio { width: 100%; margin: 15px 0; filter: sepia(20%) saturate(70%) grayscale(1) invert(0.9) sepia(50%) hue-rotate(320deg); }
 .player-buttons { display: flex; justify-content: center; gap: 10px; margin-top: 10px; }
 .btn-large { padding: 10px 20px; font-size: 15px; }
 
-/* Target & Loading Layout */
+
 .countdown-box { text-align: center; padding: 40px 20px; background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 5px; margin-top: 40px; }
 .countdown-num { font-size: 48px; color: #c00000; font-weight: bold; margin: 10px 0; }
 
-/* Footer */
+
 footer { text-align: center; padding: 15px 0; margin-top: 20px; font-size: 12px; color: #666; border-top: 1px solid #222; }
