@@ -7,15 +7,17 @@
 // Ambil path URL saat ini untuk routing halaman
 const currentPath = window.location.pathname;
 
-// JALUR AMAN & CEPAT: Jika di halaman cek.html, langsung eksekusi countdown tanpa menunggu memuat database JSON
-if (currentPath.includes('cek.html')) {
-    document.addEventListener('DOMContentLoaded', handleDownloadCountdown);
-} else {
-    // Untuk halaman lain (index, play, sitemap), muat database JSON terlebih dahulu
-    window.onload = loadAllDatabases;
+// Fungsi bantuan untuk membuat ID/Slug URL yang bersih (contoh: nama-artis-judul-lagu)
+function createSlug(artist, title) {
+    const rawString = `${artist}-${title}`;
+    return rawString.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 }
 
-// Konfigurasi daftar file database JSON (Mendukung hingga 50.000+ lagu secara bertahap)
+// Semua halaman sekarang wajib memuat database JSON terlebih dahulu 
+// agar bisa mencocokkan ID lagu dari URL dengan data aslinya.
+window.onload = loadAllDatabases;
+
+// Konfigurasi daftar file database JSON
 const dbFiles = [
     'database.json', 'database2.json', 'database3.json', 'database4.json', 'database5.json',
     'database6.json', 'database7.json', 'database8.json', 'database9.json', 'database10.json', 'database11.json'
@@ -42,6 +44,8 @@ async function loadAllDatabases() {
 function initApp() {
     if (currentPath.includes('play.html')) {
         renderPlayPage();
+    } else if (currentPath.includes('cek.html')) {
+        handleDownloadCountdown(); // Dipindah ke sini agar database dimuat lebih dulu
     } else if (currentPath.includes('sitemap.html')) {
         renderSitemap();
     } else if (currentPath.includes('about.html') || currentPath.includes('request.html')) {
@@ -70,7 +74,9 @@ function renderSongs(songs, page) {
     const paginatedItems = songs.slice(start, end);
 
     paginatedItems.forEach(song => {
-        const encodedParam = encodeURIComponent(JSON.stringify(song));
+        // Menggunakan slug ID alih-alih JSON.stringify panjang
+        const songId = createSlug(song.artist, song.title);
+        
         const card = document.createElement('div');
         card.className = 'song-card';
         card.innerHTML = `
@@ -79,8 +85,8 @@ function renderSongs(songs, page) {
                 <div class="song-title">${song.title}</div>
                 <div class="song-artist">${song.artist}</div>
                 <div class="song-actions">
-                    <a href="play.html?data=${encodedParam}" class="btn btn-play">PLAY</a>
-                    <a href="cek.html?data=${encodedParam}" class="btn btn-dl">DOWNLOAD</a>
+                    <a href="play.html?id=${songId}" class="btn btn-play">PLAY</a>
+                    <a href="cek.html?id=${songId}" class="btn btn-dl">DOWNLOAD</a>
                 </div>
             </div>
         `;
@@ -95,7 +101,7 @@ function setupSearch() {
     if (!searchInput) return;
     searchInput.addEventListener('input', (e) => {
         const query = e.target.value.toLowerCase().trim();
-        currentPage = 1; // Reset ke halaman 1 saat mengetik kata kunci
+        currentPage = 1; 
         const filtered = allSongs.filter(song => 
             song.title.toLowerCase().includes(query) || 
             song.artist.toLowerCase().includes(query)
@@ -105,7 +111,7 @@ function setupSearch() {
     });
 }
 
-// Logika Navigasi Pagination Otomatis (Maksimal menampilkan 5 tombol nomor halaman)
+// Logika Navigasi Pagination Otomatis
 function setupPagination(songs) {
     const pgnContainer = document.getElementById('pagination');
     if (!pgnContainer) return;
@@ -114,14 +120,12 @@ function setupPagination(songs) {
     const totalPages = Math.ceil(songs.length / itemsPerPage);
     if (totalPages <= 1) return;
 
-    // Tombol Previous
     const prevBtn = document.createElement('button');
     prevBtn.textContent = 'Previous';
     prevBtn.disabled = currentPage === 1;
     prevBtn.onclick = () => { currentPage--; renderSongs(songs, currentPage); setupPagination(songs); window.scrollTo(0,0); };
     pgnContainer.appendChild(prevBtn);
 
-    // Hitung rentang nomor halaman agar maksimal hanya menampilkan 5 tombol nomor
     let startPage = Math.max(1, currentPage - 2);
     let endPage = Math.min(totalPages, startPage + 4);
     if (endPage - startPage < 4) {
@@ -136,7 +140,6 @@ function setupPagination(songs) {
         pgnContainer.appendChild(btn);
     }
 
-    // Tombol Next
     const nextBtn = document.createElement('button');
     nextBtn.textContent = 'Next';
     nextBtn.disabled = currentPage === totalPages;
@@ -144,32 +147,35 @@ function setupPagination(songs) {
     pgnContainer.appendChild(nextBtn);
 }
 
-// Mengatur Konten Halaman Play & Injeksi Otomatis Metadata SEO (JSON-LD)
+// Mengatur Konten Halaman Play & Injeksi Otomatis Metadata SEO
 function renderPlayPage() {
     const params = new URLSearchParams(window.location.search);
-    const dataStr = params.get('data');
-    if (!dataStr) return;
+    const songId = params.get('id'); // Mengambil ID dari URL
+    if (!songId) return;
     
     try {
-        const song = JSON.parse(decodeURIComponent(dataStr));
+        // Mencari data lagu di database menggunakan ID
+        const song = allSongs.find(s => createSlug(s.artist, s.title) === songId);
         
-        // Atur Judul Halaman dan Elemen HTML secara Dinamis
+        if (!song) {
+            document.getElementById('h1Title').textContent = "Lagu tidak ditemukan";
+            return;
+        }
+
         document.title = `Download Lagu ${song.artist} - ${song.title} MP3 | ASHMETAL666`;
         document.getElementById('h1Title').textContent = `${song.artist} - ${song.title}`;
         document.getElementById('songImg').src = song.img || "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3Crect width='100%25' height='100%25' fill='%23222'/%3E%3C/svg%3E";
         document.getElementById('songImg').alt = `${song.artist} - ${song.title}`;
         document.getElementById('audioPlayer').src = song.src;
         
-        // Set link ke halaman cek download
-        document.getElementById('btnDlDirect').href = `cek.html?data=${encodeURIComponent(dataStr)}`;
+        // Link download sekarang juga mengirimkan ID, bukan JSON
+        document.getElementById('btnDlDirect').href = `cek.html?id=${songId}`;
         
-        // Fitur Copy Link Share
         document.getElementById('btnCopyLink').onclick = () => {
             navigator.clipboard.writeText(window.location.href);
             alert('Link lagu berhasil disalin ke papan klip!');
         };
 
-        // Injeksi JSON-LD Schema untuk MusicRecording
         const schema = {
             "@context": "https://schema.org",
             "@type": "MusicRecording",
@@ -183,7 +189,6 @@ function renderPlayPage() {
         scriptSchema.text = JSON.stringify(schema);
         document.head.appendChild(scriptSchema);
 
-        // Menampilkan 10 Lagu Terkait Secara Acak
         if (allSongs.length > 0) {
             const shuffled = [...allSongs].sort(() => 0.5 - Math.random());
             const related = shuffled.filter(s => s.title !== song.title).slice(0, 10);
@@ -191,7 +196,7 @@ function renderPlayPage() {
             if(relatedContainer) {
                 relatedContainer.innerHTML = '';
                 related.forEach(s => {
-                    const enc = encodeURIComponent(JSON.stringify(s));
+                    const relatedId = createSlug(s.artist, s.title);
                     const item = document.createElement('div');
                     item.className = 'song-card';
                     item.innerHTML = `
@@ -199,7 +204,7 @@ function renderPlayPage() {
                         <div class="song-info">
                             <div class="song-title">${s.title}</div>
                             <div class="song-artist">${s.artist}</div>
-                            <div class="song-actions"><a href="play.html?data=${enc}" class="btn btn-play">PLAY</a></div>
+                            <div class="song-actions"><a href="play.html?id=${relatedId}" class="btn btn-play">PLAY</a></div>
                         </div>
                     `;
                     relatedContainer.appendChild(item);
@@ -214,11 +219,14 @@ function renderPlayPage() {
 // Sistem Hitung Mundur 5 Detik Halaman Download `cek.html`
 function handleDownloadCountdown() {
     const params = new URLSearchParams(window.location.search);
-    const dataStr = params.get('data');
-    if (!dataStr) return;
+    const songId = params.get('id'); // Ambil ID lagu
+    if (!songId) return;
     
     try {
-        const song = JSON.parse(decodeURIComponent(dataStr));
+        // Cari URL asli download di database
+        const song = allSongs.find(s => createSlug(s.artist, s.title) === songId);
+        if (!song) return;
+
         let count = 5;
         const countEl = document.getElementById('countdown');
         const fallbackEl = document.getElementById('fallbackZone');
@@ -246,15 +254,15 @@ function renderSitemap() {
     if(!container) return;
     container.innerHTML = '';
     allSongs.forEach(song => {
-        const enc = encodeURIComponent(JSON.stringify(song));
+        const songId = createSlug(song.artist, song.title);
         const li = document.createElement('li');
         li.style.margin = "8px 0";
-        li.innerHTML = `<a href="play.html?data=${enc}" target="_blank">${song.artist} - ${song.title}</a>`;
+        li.innerHTML = `<a href="play.html?id=${songId}" target="_blank">${song.artist} - ${song.title}</a>`;
         container.appendChild(li);
     });
 }
 
-// Fungsi Internal Efisiensi Memori: Lazy Loading Gambar Menggunakan Intersection Observer
+// Fungsi Internal Efisiensi Memori: Lazy Loading Gambar
 function lazyLoadImages() {
     const images = document.querySelectorAll('img[data-src]');
     if ('IntersectionObserver' in window) {
