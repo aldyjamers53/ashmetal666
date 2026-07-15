@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASHMETAL666 Song Sitemap Generator</title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --container-bg: #1e1e1e;
+            --text-color: #e0e0e0;
+            --accent-color: #bb86fc;
+            --accent-hover: #9965f4;
+            --success-color: #03dac6;
+            --border-color: #333;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--container-bg);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--accent-color);
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .stat-card {
+            background-color: #2c2c2c;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid var(--border-color);
+        }
+
+        .stat-card h3 {
+            font-size: 0.9rem;
+            color: #aaa;
+            margin-bottom: 5px;
+        }
+
+        .stat-card p {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--success-color);
+        }
+
+        .actions {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        button {
+            background-color: var(--accent-color);
+            color: #000;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: var(--accent-hover);
+        }
+
+        button:disabled {
+            background-color: #555;
+            color: #888;
+            cursor: not-allowed;
+        }
+
+        .log-area {
+            background-color: #000;
+            color: #0f0;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: monospace;
+            height: 150px;
+            overflow-y: auto;
+            margin-bottom: 20px;
+            border: 1px solid var(--border-color);
+        }
+
+        .xml-preview {
+            width: 100%;
+            height: 300px;
+            background-color: #1a1a1a;
+            color: var(--text-color);
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            padding: 15px;
+            font-family: monospace;
+            resize: vertical;
+        }
+
+        .multi-download {
+            margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .multi-download button {
+            background-color: var(--success-color);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>ASHMETAL666 Song Sitemap Generator</h1>
+
+    <div class="stats-grid">
+        <div class="stat-card">
+            <h3>Total Lagu</h3>
+            <p id="stat-songs">0</p>
+        </div>
+        <div class="stat-card">
+            <h3>Total URL (Termasuk Static)</h3>
+            <p id="stat-urls">0</p>
+        </div>
+        <div class="stat-card">
+            <h3>Ukuran XML</h3>
+            <p id="stat-size">0 KB</p>
+        </div>
+        <div class="stat-card">
+            <h3>Tanggal Dibuat</h3>
+            <p id="stat-date">-</p>
+        </div>
+    </div>
+
+    <div class="actions">
+        <button id="btn-generate" onclick="generateSitemap()">Generate Sitemap</button>
+        <button id="btn-copy" onclick="copyXML()" disabled>Copy XML</button>
+        <button id="btn-download" onclick="downloadXML()" disabled>Download sitemap.xml</button>
+    </div>
+
+    <div id="multi-download-container" class="multi-download" style="display: none;">
+        <!-- Buttons for index and chunks will appear here if > 50,000 URLs -->
+    </div>
+
+    <div class="log-area" id="log-console">
+        Siap memproses database. Tekan "Generate Sitemap" untuk memulai.
+    </div>
+
+    <textarea class="xml-preview" id="xml-preview" readonly placeholder="Preview XML akan muncul di sini..."></textarea>
+</div>
+
+<script>
+    const BASE_URL = 'https://ashmetal666.vercel.app/';
+    const DATABASES = ['database.json', 'database2.json', 'database3.json', 'database4.json'];
+    const MAX_URLS_PER_SITEMAP = 50000;
+    
+    let generatedSitemaps = []; // Menyimpan sitemap hasil generate
+
+    // Static pages sesuai instruksi
+    const staticPages = [
+        { url: BASE_URL, priority: '1.0', changefreq: 'daily' },
+        { url: BASE_URL + 'about.html', priority: '0.6', changefreq: 'weekly' },
+        { url: BASE_URL + 'request.html', priority: '0.6', changefreq: 'weekly' },
+        { url: BASE_URL + 'sitemap.html', priority: '0.6', changefreq: 'weekly' }
+    ];
+
+    function logMessage(msg) {
+        const consoleEl = document.getElementById('log-console');
+        const time = new Date().toLocaleTimeString();
+        consoleEl.innerHTML += `<div>[${time}] ${msg}</div>`;
+        consoleEl.scrollTop = consoleEl.scrollHeight;
+    }
+
+    function escapeXML(str) {
+        if (!str) return '';
+        return String(str)
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&apos;');
+    }
+
+    function getTodayDate() {
+        return new Date().toISOString().split('T')[0];
+    }
+
+    async function fetchDatabases() {
+        let allData = [];
+        for (const file of DATABASES) {
+            try {
+                logMessage(`Membaca ${file}...`);
+                const response = await fetch(file);
+                if (response.ok) {
+                    const data = await response.json();
+                    allData = allData.concat(data);
+                    logMessage(`Berhasil memuat ${data.length} item dari ${file}`);
+                } else {
+                    logMessage(`File ${file} tidak ditemukan atau gagal dimuat (Status: ${response.status}). Diabaikan.`);
+                }
+            } catch (error) {
+                logMessage(`Gagal membaca ${file}: ${error.message}. Diabaikan.`);
+            }
+        }
+        return allData;
+    }
+
+    function processData(rawData) {
+        logMessage('Memproses dan membersihkan data...');
+        let uniqueUrls = new Set();
+        let cleanedData = [];
+
+        rawData.forEach((item, index) => {
+            // Memastikan id atau title ada. Jika id tidak ada, gunakan urutan data (index + 1)
+            let id = item.id ? item.id : (index + 1).toString();
+            
+            // Validasi URL lagu
+            let loc = `${BASE_URL}play.html?id=${encodeURIComponent(id)}`;
+            
+            // Hapus duplikat
+            if (!uniqueUrls.has(loc)) {
+                uniqueUrls.add(loc);
+                cleanedData.push({
+                    originalId: id, // simpan untuk sorting
+                    loc: escapeXML(loc),
+                    priority: '0.8',
+                    changefreq: 'weekly'
+                });
+            }
+        });
+
+        // Urut berdasarkan ID terkecil
+        cleanedData.sort((a, b) => {
+            let numA = parseInt(a.originalId);
+            let numB = parseInt(b.originalId);
+            if (!isNaN(numA) && !isNaN(numB)) {
+                return numA - numB; // Urut angka
+            }
+            // Fallback string sort jika ID bukan angka murni
+            return a.originalId.localeCompare(b.originalId);
+        });
+
+        logMessage(`Data selesai diproses. Ditemukan ${cleanedData.length} lagu unik.`);
+        return cleanedData;
+    }
+
+    function buildXMLString(urls) {
+        const today = getTodayDate();
+        let xml = `<?xml version="1.0" encoding="UTF-8"?>\n`;
+        xml += `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;
+
+        urls.forEach(urlObj => {
+            xml += `  <url>\n`;
+            xml += `    <loc>${urlObj.loc}</loc>\n`;
+            xml += `    <lastmod>${today}</lastmod>\n`;
+            xml += `    <changefreq>${urlObj.changefreq}</changefreq>\n`;
+            xml += `    <priority>${urlObj.priority}</priority>\n`;
+            xml += `  </url>\n`;
+        });
+
+        xml += `</urlset>`;
+        return xml;
+    }
+
+    function buildSitemapIndex(chunksCount) {
+        const today = getTodayDate();
+        let xml = `<?xml version="1.0" encoding="UTF-8"?>\n`;
+        xml += `<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;
+        
+        for (let i = 1; i <= chunksCount; i++) {
+            xml += `  <sitemap>\n`;
+            xml += `    <loc>${BASE_URL}sitemap-${i}.xml</loc>\n`;
+            xml += `    <lastmod>${today}</lastmod>\n`;
+            xml += `  </sitemap>\n`;
+        }
+        xml += `</sitemapindex>`;
+        return xml;
+    }
+
+    async function generateSitemap() {
+        document.getElementById('btn-generate').disabled = true;
+        document.getElementById('log-console').innerHTML = '';
+        document.getElementById('multi-download-container').style.display = 'none';
+        document.getElementById('multi-download-container').innerHTML = '';
+        generatedSitemaps = [];
+
+        logMessage('Memulai generasi sitemap...');
+
+        // 1. Fetch
+        const rawData = await fetchDatabases();
+        
+        if (rawData.length === 0) {
+            logMessage('TIDAK ADA DATA! Pastikan file database.json ada di folder yang sama.');
+            document.getElementById('btn-generate').disabled = false;
+            return;
+        }
+
+        // 2. Process & Sort
+        const songUrls = processData(rawData);
+
+        // 3. Combine Static and Song URLs
+        let allUrls = [];
+        
+        staticPages.forEach(page => {
+            allUrls.push({
+                loc: escapeXML(page.url),
+                priority: page.priority,
+                changefreq: page.changefreq
+            });
+        });
+
+        allUrls = allUrls.concat(songUrls);
+        const totalUrls = allUrls.length;
+
+        logMessage(`Total URL untuk Sitemap: ${totalUrls} (termasuk static)`);
+
+        // 4. Generate XML Logic (<= 50,000 vs > 50,000)
+        let mainXmlContent = '';
+
+        if (totalUrls <= MAX_URLS_PER_SITEMAP) {
+            // Standar sitemap
+            mainXmlContent = buildXMLString(allUrls);
+            generatedSitemaps.push({ filename: 'sitemap.xml', content: mainXmlContent });
+            logMessage('Berhasil membuat 1 file sitemap.xml.');
+            setupSingleView(mainXmlContent, songUrls.length, totalUrls);
+        } else {
+            // Chunking: Sitemap Index mode
+            logMessage(`Jumlah URL melebihi 50.000. Memecah sitemap...`);
+            
+            let chunks = [];
+            for (let i = 0; i < totalUrls; i += MAX_URLS_PER_SITEMAP) {
+                chunks.push(allUrls.slice(i, i + MAX_URLS_PER_SITEMAP));
+            }
+
+            // Create index
+            mainXmlContent = buildSitemapIndex(chunks.length);
+            generatedSitemaps.push({ filename: 'sitemap.xml', content: mainXmlContent });
+
+            // Create chunks
+            chunks.forEach((chunk, index) => {
+                generatedSitemaps.push({
+                    filename: `sitemap-${index + 1}.xml`,
+                    content: buildXMLString(chunk)
+                });
+            });
+
+            logMessage(`Berhasil membuat sitemap index dan ${chunks.length} sitemap anak.`);
+            setupMultiView(mainXmlContent, songUrls.length, totalUrls);
+        }
+
+        document.getElementById('btn-generate').disabled = false;
+    }
+
+    function formatBytes(bytes) {
+        if (bytes === 0) return '0 Bytes';
+        const k = 1024;
+        const dm = 2;
+        const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+        const i = Math.floor(Math.log(bytes) / Math.log(k));
+        return parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + ' ' + sizes[i];
+    }
+
+    function setupSingleView(xmlContent, songCount, totalUrls) {
+        const blob = new Blob([xmlContent], { type: 'application/xml' });
+        
+        document.getElementById('xml-preview').value = xmlContent;
+        document.getElementById('stat-songs').innerText = songCount.toLocaleString('id-ID');
+        document.getElementById('stat-urls').innerText = totalUrls.toLocaleString('id-ID');
+        document.getElementById('stat-size').innerText = formatBytes(blob.size);
+        document.getElementById('stat-date').innerText = getTodayDate();
+        
+        document.getElementById('btn-copy').disabled = false;
+        document.getElementById('btn-download').disabled = false;
+        document.getElementById('btn-download').style.display = 'inline-block';
+    }
+
+    function setupMultiView(indexContent, songCount, totalUrls) {
+        // Tampilkan Index XML di textarea
+        document.getElementById('xml-preview').value = indexContent;
+        
+        // Hitung total size dari semua file
+        let totalSize = generatedSitemaps.reduce((acc, sm) => acc + new Blob([sm.content]).size, 0);
+
+        document.getElementById('stat-songs').innerText = songCount.toLocaleString('id-ID');
+        document.getElementById('stat-urls').innerText = totalUrls.toLocaleString('id-ID');
+        document.getElementById('stat-size').innerText = formatBytes(totalSize) + ' (Total)';
+        document.getElementById('stat-date').innerText = getTodayDate();
+
+        document.getElementById('btn-copy').disabled = false;
+        
+        // Sembunyikan tombol download single file, ganti dengan multi-download
+        document.getElementById('btn-download').style.display = 'none';
+        
+        const multiContainer = document.getElementById('multi-download-container');
+        multiContainer.style.display = 'flex';
+        multiContainer.innerHTML = '<h3>Download Semua File:</h3>';
+
+        generatedSitemaps.forEach(sm => {
+            const btn = document.createElement('button');
+            btn.innerText = `Download ${sm.filename}`;
+            btn.onclick = () => downloadFile(sm.filename, sm.content);
+            multiContainer.appendChild(btn);
+        });
+    }
+
+    function copyXML() {
+        const text = document.getElementById('xml-preview').value;
+        navigator.clipboard.writeText(text).then(() => {
+            alert('XML Index/Main Sitemap berhasil disalin ke clipboard!');
+        }).catch(err => {
+            alert('Gagal menyalin: ' + err);
+        });
+    }
+
+    function downloadXML() {
+        if (generatedSitemaps.length > 0) {
+            downloadFile(generatedSitemaps[0].filename, generatedSitemaps[0].content);
+        }
+    }
+
+    function downloadFile(filename, content) {
+        const blob = new Blob([content], { type: 'application/xml' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = filename;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    }
+</script>
+
+</body>
+</html>
